@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="" />
+    <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/user/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/user/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/user/UserService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,12 +142,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581031367299</updated>
-      <workItem from="1581031374541" duration="19528000" />
+      <workItem from="1581031374541" duration="22244000" />
     </task>
+    <task id="LOCAL-00001" summary="adding client and subscription methods">
+      <created>1581278189090</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581278189090</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding client and subscription methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding client and subscription methods" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Assign_Data_Sources" timestamp="1581234060029">
@@ -161,10 +178,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581234141447" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1581277640986">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1581279750268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581277640986" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581279750268" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1581278135921">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

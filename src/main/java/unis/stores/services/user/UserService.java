@@ -68,4 +68,11 @@ public class UserService implements IUserService {
 
         userRepository.delete(id);
     }
+
+    @Override
+    public boolean login(String username, String password) {
+        User login = userRepository.findByUsernameAndPassword(username, password);
+
+        return login != null;
+    }
 }
