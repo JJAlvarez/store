@@ -71,23 +71,24 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public void updatePassword(int id, String newPassword) {
+    public boolean updatePassword(int id, String newPassword) {
         if (!userRepository.exists(id))
-            return;
+            return false;
 
         User updateUser = userRepository.findOne(id);
 
         updateUser.setPassword(newPassword);
 
-        userRepository.save(updateUser);
+        return userRepository.save(updateUser) != null;
     }
 
     @Override
-    public void deleteUser(int id) {
+    public boolean deleteUser(int id) {
         if (!userRepository.exists(id))
-            return;
+            return false;
 
         userRepository.delete(id);
+        return true;
     }
 
     @Override
