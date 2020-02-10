@@ -34,7 +34,8 @@ public class Client {
     @Column(name = "phone")
     private String phone;
 
-    @Column(name = "image", columnDefinition = "TEXT")
+    @Column(name = "image")
+    @Lob
     private String image;
 
     @OneToOne

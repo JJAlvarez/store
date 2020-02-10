@@ -70,9 +70,12 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public boolean login(String username, String password) {
+    public User login(String username, String password) {
         User login = userRepository.findByUsernameAndPassword(username, password);
 
-        return login != null;
+        if (login != null)
+            login.setPassword(null);
+
+        return login;
     }
 }
