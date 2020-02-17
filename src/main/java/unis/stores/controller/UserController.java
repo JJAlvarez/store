@@ -11,14 +11,17 @@ import unis.stores.services.user.UserService;
 
 import java.util.Map;
 
+@CrossOrigin
 @Controller
 public class UserController {
 
     @Autowired
     private UserService userService;
 
-    @PostMapping("/login")
-    public ResponseEntity<Object> logIn(@RequestParam Map<String, String> body) {
+    @PostMapping(
+            value = "/login",
+            headers = "Accept=application/json")
+    public ResponseEntity<Object> logIn(@RequestBody Map<String, String> body) {
         if (body.get(Constants.USERNAME_LABEL) == null || body.get(Constants.PASSWORD_LABEL) == null)
             return ResponseEntity.badRequest().body(new LoginResult(false, "No Credentials Provided!"));
 
@@ -33,7 +36,7 @@ public class UserController {
 
 
     @PostMapping("/signin")
-    public ResponseEntity<Object> signIn(@RequestParam Map<String, String> body) {
+    public ResponseEntity<Object> signIn(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.FIRST_NAME_LABEL) || !body.containsKey(Constants.LAST_NAME_LABEL) || !body.containsKey(Constants.USERNAME_LABEL)
             || !body.containsKey(Constants.PASSWORD_LABEL) || !body.containsKey(Constants.ROL_ID_LABEL))
             return ResponseEntity.badRequest().body(new SignInResult(false, "Bad Request"));
@@ -58,16 +61,16 @@ public class UserController {
     }
 
     @PutMapping("/user")
-    public ResponseEntity<Object> update(@RequestParam Map<String, String> body) {
-        if (!body.containsKey(Constants.USER_ID_LABEL) || !body.containsKey(Constants.FIRST_NAME_LABEL) || !body.containsKey(Constants.LAST_NAME_LABEL) || !body.containsKey(Constants.USERNAME_LABEL)
-                || !body.containsKey(Constants.PASSWORD_LABEL))
+    public ResponseEntity<Object> update(@RequestBody Map<String, String> body) {
+        if (!body.containsKey(Constants.USER_ID_LABEL) || !body.containsKey(Constants.FIRST_NAME_LABEL) ||
+                !body.containsKey(Constants.LAST_NAME_LABEL) || !body.containsKey(Constants.USERNAME_LABEL))
             return ResponseEntity.badRequest().body(new UpdateUserResult(false, "Bad Request"));
 
         try {
             int userId = Integer.parseInt(body.get(Constants.USER_ID_LABEL));
 
-            if (userService.checkExistUser(body.get(Constants.USERNAME_LABEL)))
-                return ResponseEntity.badRequest().body(new SignInResult(false, "User Already Exists!"));
+            if (userService.getUserById(userId) == null)
+                return ResponseEntity.badRequest().body(new SignInResult(false, "User doesn't Exists!"));
 
             User userUpdated = userService.updateUser(userId, body.get(Constants.FIRST_NAME_LABEL), body.get(Constants.LAST_NAME_LABEL),
                     body.get(Constants.USERNAME_LABEL));
@@ -83,7 +86,7 @@ public class UserController {
     }
 
     @PutMapping("/user/rol")
-    public ResponseEntity<Object> updateRol(@RequestParam Map<String, String> body) {
+    public ResponseEntity<Object> updateRol(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.USER_ID_LABEL) || !body.containsKey(Constants.ROL_ID_LABEL))
             return ResponseEntity.badRequest().body(new UpdateUserRolResult(false, "Bad Request"));
 
@@ -104,7 +107,7 @@ public class UserController {
     }
 
     @PutMapping("/user/password")
-    public ResponseEntity<Object> updatePassword(@RequestParam Map<String, String> body) {
+    public ResponseEntity<Object> updatePassword(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.USER_ID_LABEL) || !body.containsKey(Constants.PASSWORD_LABEL))
             return ResponseEntity.badRequest().body(new UpdateUserPasswordResult(false, "Bad Request"));
 

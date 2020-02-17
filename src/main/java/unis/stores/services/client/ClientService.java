@@ -31,9 +31,9 @@ public class ClientService implements IClientService {
     }
 
     @Override
-    public void createClient(String name, String nit, String email, String phone, String image, int subscriptionId) {
+    public Client createClient(String name, String nit, String email, String phone, String image, int subscriptionId) {
         if (!subscriptionRepository.exists(subscriptionId))
-            return;
+            return null;
 
         Client newClient = new Client();
 
@@ -44,13 +44,13 @@ public class ClientService implements IClientService {
         newClient.setImage(image);
         newClient.setSubscription(subscriptionRepository.findOne(subscriptionId));
 
-        clientRepository.save(newClient);
+        return clientRepository.save(newClient);
     }
 
     @Override
-    public void updateClient(int id, String name, String nit, String email, String phone, String image, int subscriptionId) {
+    public Client updateClient(int id, String name, String nit, String email, String phone, String image, int subscriptionId) {
         if (!clientRepository.exists(id) || !subscriptionRepository.exists(subscriptionId))
-            return;
+            return null;
 
         Client updateClient = clientRepository.findOne(id);
 
@@ -61,14 +61,20 @@ public class ClientService implements IClientService {
         updateClient.setImage(image);
         updateClient.setSubscription(subscriptionRepository.findOne(subscriptionId));
 
-        clientRepository.save(updateClient);
+        return clientRepository.save(updateClient);
     }
 
     @Override
-    public void deleteClient(int id) {
+    public boolean deleteClient(int id) {
         if (!clientRepository.exists(id))
-            return;
+            return false;
 
         clientRepository.delete(id);
+        return true;
+    }
+
+    @Override
+    public Client searchByNit(String nit) {
+        return clientRepository.findByNit(nit);
     }
 }
