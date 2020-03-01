@@ -6,18 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/client/CreateClientResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/javadoc/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/client/DeleteClientResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/client/GetClientResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/client/UpdateClientResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/IClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/IClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ClientController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +157,9 @@
       <option name="presentableId" value="Default" />
       <updated>1581031367299</updated>
       <workItem from="1581031374541" duration="31270000" />
-      <workItem from="1581902002043" duration="5813000" />
+      <workItem from="1581902002043" duration="8132000" />
+      <workItem from="1582241255361" duration="3248000" />
+      <workItem from="1583101108038" duration="880000" />
     </task>
     <task id="LOCAL-00001" summary="adding client and subscription methods">
       <created>1581278189090</created>
@@ -216,10 +211,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581234141447" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1581468866197">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1582419915805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581468866197" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582419915805" />
     <state x="590" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581320799772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -296,14 +291,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581316794843" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581902027089">
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583102801612">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581902027089" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583102801612" />
     <state x="690" y="286" key="extract.method.dialog" timestamp="1581537896406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="286" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581537896406" />
+    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1583102923069">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583102923069" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1581231915712">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -316,16 +315,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581321495366" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/unis/stores/controller/UserController.java</url>
-          <line>128</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
