@@ -6,4 +6,6 @@ import unis.stores.entities.Rol;
 
 @Repository
 public interface RolRepository extends CrudRepository<Rol, Integer> {
+
+    Rol findByName(String name);
 }

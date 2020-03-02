@@ -27,30 +27,36 @@ public class RolService implements IRolService {
     }
 
     @Override
-    public void createRol(String name) {
+    public Rol createRol(String name) {
         Rol newRol = new Rol();
         newRol.setName(name);
 
-        rolRepository.save(newRol);
+        return rolRepository.save(newRol);
     }
 
     @Override
-    public void updateRol(int id, String name) {
+    public Rol updateRol(int id, String name) {
         if (!rolRepository.exists(id))
-            return;
+            return null;
 
         Rol updateRol = rolRepository.findOne(id);
         updateRol.setName(name);
 
-        rolRepository.save(updateRol);
+        return  rolRepository.save(updateRol);
     }
 
     @Override
-    public void deleteRol(int id) {
+    public boolean deleteRol(int id) {
         if (!rolRepository.exists(id)) {
-            return;
+            return false;
         }
 
         rolRepository.delete(id);
+        return true;
+    }
+
+    @Override
+    public Rol searchByName(String name) {
+        return rolRepository.findByName(name);
     }
 }
