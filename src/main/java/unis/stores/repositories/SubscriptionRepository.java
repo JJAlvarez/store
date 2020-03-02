@@ -2,10 +2,8 @@ package unis.stores.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import unis.stores.entities.Rol;
+import unis.stores.entities.Subscription;
 
 @Repository
-public interface RolRepository extends CrudRepository<Rol, Integer> {
-
-    Rol findByName(String name);
+public interface SubscriptionRepository extends CrudRepository<Subscription, Integer> {
 }

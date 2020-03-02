@@ -2,10 +2,10 @@ package unis.stores.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import unis.stores.entities.Rol;
+import unis.stores.entities.Client;
 
 @Repository
-public interface RolRepository extends CrudRepository<Rol, Integer> {
+public interface ClientRepository extends CrudRepository<Client, Integer> {
 
-    Rol findByName(String name);
+    Client findByNit(String nit);
 }
