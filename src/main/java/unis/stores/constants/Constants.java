@@ -8,7 +8,7 @@ public class Constants {
     public static final String PASSWORD_LABEL = "password";
     public static final String FIRST_NAME_LABEL = "firstName";
     public static final String LAST_NAME_LABEL = "lastName";
-    public static final String ROL_ID_LABEL = "rolId";
+    public static final String USER_ROL_ID_LABEL = "rolId";
 
     //Client constants
     public static final String CLIENT_NAME_LABEL = "name";
@@ -18,5 +18,9 @@ public class Constants {
     public static final String CLIENT_PHONE_LABEL = "phone";
     public static final String CLIENT_IMAGE_LABEL = "image";
     public static final String CLIENT_SUBSCRIPTION_LABEL = "subscriptionId";
+
+    //Rol Constants
+    public static final String ROL_NAME_LABEL = "name";
+    public static final String ROL_ID_LABEL = "id";
 
 }

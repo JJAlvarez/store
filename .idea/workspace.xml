@@ -6,11 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/client/DeleteClientResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/client/GetClientResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/client/UpdateClientResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RolController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/rol/CreateRolResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/rol/DeleteRolResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/rol/GetRolResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/rol/UpdateRolResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/RolRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/RolRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/rol/IRolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/rol/IRolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/rol/RolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/rol/RolService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +165,7 @@
       <workItem from="1581031374541" duration="31270000" />
       <workItem from="1581902002043" duration="8132000" />
       <workItem from="1582241255361" duration="3248000" />
-      <workItem from="1583101108038" duration="880000" />
+      <workItem from="1583101108038" duration="5667000" />
     </task>
     <task id="LOCAL-00001" summary="adding client and subscription methods">
       <created>1581278189090</created>
@@ -211,10 +217,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581234141447" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1582419915805">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1583118603252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582419915805" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583118603252" />
     <state x="590" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581320799772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

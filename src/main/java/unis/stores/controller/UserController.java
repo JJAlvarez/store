@@ -38,11 +38,11 @@ public class UserController {
     @PostMapping("/signin")
     public ResponseEntity<Object> signIn(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.FIRST_NAME_LABEL) || !body.containsKey(Constants.LAST_NAME_LABEL) || !body.containsKey(Constants.USERNAME_LABEL)
-            || !body.containsKey(Constants.PASSWORD_LABEL) || !body.containsKey(Constants.ROL_ID_LABEL))
+            || !body.containsKey(Constants.PASSWORD_LABEL) || !body.containsKey(Constants.USER_ROL_ID_LABEL))
             return ResponseEntity.badRequest().body(new SignInResult(false, "Bad Request"));
 
         try {
-            int rolId = Integer.parseInt(body.get(Constants.ROL_ID_LABEL));
+            int rolId = Integer.parseInt(body.get(Constants.USER_ROL_ID_LABEL));
 
             if (userService.checkExistUser(body.get(Constants.USERNAME_LABEL)))
                 return ResponseEntity.badRequest().body(new SignInResult(false, "User Already Exists!"));
@@ -87,12 +87,12 @@ public class UserController {
 
     @PutMapping("/user/rol")
     public ResponseEntity<Object> updateRol(@RequestBody Map<String, String> body) {
-        if (!body.containsKey(Constants.USER_ID_LABEL) || !body.containsKey(Constants.ROL_ID_LABEL))
+        if (!body.containsKey(Constants.USER_ID_LABEL) || !body.containsKey(Constants.USER_ROL_ID_LABEL))
             return ResponseEntity.badRequest().body(new UpdateUserRolResult(false, "Bad Request"));
 
         try {
             int userId = Integer.parseInt(body.get(Constants.USER_ID_LABEL));
-            int rolId = Integer.parseInt(body.get(Constants.ROL_ID_LABEL));
+            int rolId = Integer.parseInt(body.get(Constants.USER_ROL_ID_LABEL));
 
             User userUpdated = userService.updateUserRol(userId, rolId);
 
