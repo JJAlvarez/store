@@ -88,8 +88,8 @@
     <schema id="28" parent="1" name="STORES">
       <ObjectId>102</ObjectId>
       <CreatedTimestamp>2020-02-08.09:56:35</CreatedTimestamp>
-      <ModifiedTimestamp>2020-02-09.05:14:02</ModifiedTimestamp>
-      <IntrospectionTimestamp>2020-02-09.05:14:21</IntrospectionTimestamp>
+      <ModifiedTimestamp>2020-03-02.10:12:53</ModifiedTimestamp>
+      <IntrospectionTimestamp>2020-03-02.10:26:23</IntrospectionTimestamp>
       <Current>1</Current>
     </schema>
     <schema id="29" parent="1" name="SYS">
@@ -49164,13 +49164,19 @@
       <TargetSchemaName>SYS</TargetSchemaName>
       <TargetObjectName>_V$SXGG_TRANSACTION</TargetObjectName>
     </synonym>
-    <sequence id="7045" parent="28" name="ID_SEQ">
+    <sequence id="7045" parent="28" name="CLIENT_ID_SEQUENCE">
+      <ObjectId>75236</ObjectId>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="7046" parent="28" name="ID_SEQ">
       <ObjectId>73943</ObjectId>
       <CreatedTimestamp>2020-02-08.19:21:42</CreatedTimestamp>
       <ModifiedTimestamp>2020-02-08.19:21:42</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="7046" parent="28" name="ISEQ$$_73920">
+    <sequence id="7047" parent="28" name="ISEQ$$_73920">
       <ObjectId>73921</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2020-02-08.09:56:35</CreatedTimestamp>
@@ -49178,117 +49184,308 @@
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <sequence id="7047" parent="28" name="ROL_ID_SEQUENCE">
-      <ObjectId>73985</ObjectId>
-      <CreatedTimestamp>2020-02-09.05:14:02</CreatedTimestamp>
-      <ModifiedTimestamp>2020-02-09.05:14:02</ModifiedTimestamp>
+    <sequence id="7048" parent="28" name="ROL_ID_SEQUENCE">
+      <ObjectId>75237</ObjectId>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="7048" parent="28" name="USER_ID_SEQUENCE">
-      <ObjectId>73986</ObjectId>
-      <CreatedTimestamp>2020-02-09.05:14:02</CreatedTimestamp>
-      <ModifiedTimestamp>2020-02-09.05:14:02</ModifiedTimestamp>
+    <sequence id="7049" parent="28" name="SUBSCRIPTION_ID_SEQUENCE">
+      <ObjectId>75238</ObjectId>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="7049" parent="28" name="USER_SEQ">
+    <sequence id="7050" parent="28" name="USER_ID_SEQUENCE">
+      <ObjectId>75239</ObjectId>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="7051" parent="28" name="USER_SEQ">
       <ObjectId>73935</ObjectId>
       <CreatedTimestamp>2020-02-08.19:05:48</CreatedTimestamp>
       <ModifiedTimestamp>2020-02-08.19:05:48</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="7050" parent="28" name="user_SEQ">
+    <sequence id="7052" parent="28" name="user_SEQ">
       <ObjectId>73941</ObjectId>
       <CreatedTimestamp>2020-02-08.19:19:55</CreatedTimestamp>
       <ModifiedTimestamp>2020-02-08.19:19:55</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <table id="7051" parent="28" name="ROL">
-      <ObjectId>73987</ObjectId>
-      <CreatedTimestamp>2020-02-09.05:14:02</CreatedTimestamp>
-      <ModifiedTimestamp>2020-02-09.05:14:02</ModifiedTimestamp>
+    <table id="7053" parent="28" name="CLIENT">
+      <ObjectId>75240</ObjectId>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="7052" parent="28" name="user">
-      <ObjectId>73989</ObjectId>
-      <CreatedTimestamp>2020-02-09.05:14:02</CreatedTimestamp>
-      <ModifiedTimestamp>2020-02-09.05:14:02</ModifiedTimestamp>
+    <table id="7054" parent="28" name="ROL">
+      <ObjectId>75244</ObjectId>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <column id="7053" parent="7051" name="ID">
+    <table id="7055" parent="28" name="SUBSCRIPTION">
+      <ObjectId>75246</ObjectId>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="7056" parent="28" name="USERS">
+      <ObjectId>75248</ObjectId>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="7057" parent="28" name="VEHICLE">
+      <ObjectId>75663</ObjectId>
+      <CreatedTimestamp>2020-03-01.15:41:42</CreatedTimestamp>
+      <ModifiedTimestamp>2020-03-02.10:12:53</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="7058" parent="28" name="user">
+      <ObjectId>74099</ObjectId>
+      <CreatedTimestamp>2020-02-09.08:52:35</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-09.08:57:24</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="7059" parent="7053" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(10 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="7054" parent="7051" name="NAME">
+    <column id="7060" parent="7053" name="EMAIL">
       <Position>2</Position>
       <DataType>VARCHAR2(255 char)|0us</DataType>
     </column>
-    <index id="7055" parent="7051" name="SYS_C007486">
-      <ObjectId>73988</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2020-02-09.05:14:02</CreatedTimestamp>
-      <ModifiedTimestamp>2020-02-09.05:14:02</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>ID</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="7056" parent="7051" name="SYS_C007486">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2020-02-09.05:14:02</ModifiedTimestamp>
-      <ColNames>ID</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C007486</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="7057" parent="7052" name="ID">
-      <Position>1</Position>
-      <DataType>NUMBER(10 digit)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="7058" parent="7052" name="FIRST_NAME">
-      <Position>2</Position>
-      <DataType>VARCHAR2(255 char)|0us</DataType>
-    </column>
-    <column id="7059" parent="7052" name="LAST_NAME">
+    <column id="7061" parent="7053" name="IMAGE">
       <Position>3</Position>
-      <DataType>VARCHAR2(255 char)|0us</DataType>
+      <DataType>CLOB|0s</DataType>
     </column>
-    <column id="7060" parent="7052" name="PASSWORD">
+    <column id="7062" parent="7053" name="NAME">
       <Position>4</Position>
       <DataType>VARCHAR2(255 char)|0us</DataType>
     </column>
-    <column id="7061" parent="7052" name="USERNAME">
+    <column id="7063" parent="7053" name="NIL">
       <Position>5</Position>
       <DataType>VARCHAR2(255 char)|0us</DataType>
     </column>
-    <column id="7062" parent="7052" name="ROL_ID">
+    <column id="7064" parent="7053" name="PHONE">
       <Position>6</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7065" parent="7053" name="SUBSCRIPTION_ID">
+      <Position>7</Position>
       <DataType>NUMBER(10 digit)|0s</DataType>
     </column>
-    <index id="7063" parent="7052" name="SYS_C007488">
-      <ObjectId>73990</ObjectId>
+    <index id="7066" parent="7053" name="SYS_C008260">
+      <ObjectId>75243</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2020-02-09.05:14:02</CreatedTimestamp>
-      <ModifiedTimestamp>2020-02-09.05:14:02</ModifiedTimestamp>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="7064" parent="7052" name="SYS_C007488">
+    <key id="7067" parent="7053" name="SYS_C008260">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2020-02-09.05:14:02</ModifiedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
       <ColNames>ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C007488</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C008260</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="7065" parent="7052" name="FKEOE91WWOYM9AKT9JLEF66QFWY">
-      <ModifiedTimestamp>2020-02-09.05:14:02</ModifiedTimestamp>
+    <foreign-key id="7068" parent="7053" name="FK6P39AE9B1RQCFIRJV1CO47XD4">
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
+      <ColNames>SUBSCRIPTION_ID</ColNames>
+      <RefSchemaName>STORES</RefSchemaName>
+      <RefTableName>SUBSCRIPTION</RefTableName>
+      <RefKeyName>SYS_C008264</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="7069" parent="7054" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="7070" parent="7054" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <index id="7071" parent="7054" name="SYS_C008262">
+      <ObjectId>75245</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="7072" parent="7054" name="SYS_C008262">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C008262</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="7073" parent="7055" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="7074" parent="7055" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <index id="7075" parent="7055" name="SYS_C008264">
+      <ObjectId>75247</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="7076" parent="7055" name="SYS_C008264">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C008264</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="7077" parent="7056" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="7078" parent="7056" name="FIRST_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7079" parent="7056" name="LAST_NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7080" parent="7056" name="PASSWORD">
+      <Position>4</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7081" parent="7056" name="USERNAME">
+      <Position>5</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7082" parent="7056" name="ROL_ID">
+      <Position>6</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+    </column>
+    <index id="7083" parent="7056" name="SYS_C008266">
+      <ObjectId>75249</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-02-16.16:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="7084" parent="7056" name="SYS_C008266">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C008266</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="7085" parent="7056" name="FKD2DUOK4CIMXGHEOX9O327LDO8">
+      <ModifiedTimestamp>2020-02-16.16:59:23</ModifiedTimestamp>
       <ColNames>ROL_ID</ColNames>
       <RefSchemaName>STORES</RefSchemaName>
       <RefTableName>ROL</RefTableName>
-      <RefKeyName>SYS_C007486</RefKeyName>
+      <RefKeyName>SYS_C008262</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
+    <column id="7086" parent="7057" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="7087" parent="7057" name="BRAND">
+      <Position>2</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7088" parent="7057" name="LINE">
+      <Position>3</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7089" parent="7057" name="YEAR">
+      <Position>4</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7090" parent="7057" name="UNIVERSAL_CODE">
+      <Position>5</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="7091" parent="7057" name="SYS_C008346">
+      <ObjectId>75664</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-03-01.15:41:42</CreatedTimestamp>
+      <ModifiedTimestamp>2020-03-01.15:41:42</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="7092" parent="7057" name="SYS_C008346">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-03-01.15:41:42</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C008346</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="7093" parent="7058" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="7094" parent="7058" name="FIRST_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7095" parent="7058" name="LAST_NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7096" parent="7058" name="PASSWORD">
+      <Position>4</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7097" parent="7058" name="USERNAME">
+      <Position>5</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="7098" parent="7058" name="ROL_ID">
+      <Position>6</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+    </column>
+    <index id="7099" parent="7058" name="SYS_C007584">
+      <ObjectId>74100</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-02-09.08:52:35</CreatedTimestamp>
+      <ModifiedTimestamp>2020-02-09.08:52:35</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="7100" parent="7058" name="SYS_C007584">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-02-09.08:52:35</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007584</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>
