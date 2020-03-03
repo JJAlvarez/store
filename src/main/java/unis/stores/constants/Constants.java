@@ -23,4 +23,10 @@ public class Constants {
     public static final String ROL_NAME_LABEL = "name";
     public static final String ROL_ID_LABEL = "id";
 
+    //Vehicle Constants
+    public static final String VEHICLE_ID_LABEL = "universalCode";
+    public static final String VEHICLE_BRAND_LABEL = "brand";
+    public static final String VEHICLE_LINE_LABEL = "line";
+    public static final String VEHICLE_YEAR_LABEL = "year";
+
 }

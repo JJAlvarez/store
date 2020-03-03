@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Vehicle {
 
     @Id
-    @Column(name = "universal_code")
+    @Column(name = "universal_code", nullable = false)
     private String universalCode;
 
     @Column(name = "brand")
