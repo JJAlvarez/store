@@ -29,4 +29,12 @@ public class Constants {
     public static final String VEHICLE_LINE_LABEL = "line";
     public static final String VEHICLE_YEAR_LABEL = "year";
 
+    //Product Constants
+    public static final String PRODUCT_ID_LABEL = "id";
+    public static final String PRODUCT_NAME_LABEL = "name";
+    public static final String PRODUCT_DESCRIPTION_LABEL = "description";
+    public static final String PRODUCT_PART_NO_LABEL = "partNo";
+    public static final String PRODUCT_PRICE_LABEL = "price";
+    public static final String PRODUCT_PRICE_STOCK = "stock";
+
 }
