@@ -6,13 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7506c0cf-971b-48ad-be71-150dfaf048f3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7506c0cf-971b-48ad-be71-150dfaf048f3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/SubscriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/subscription/CreateSubscriptionResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/subscription/DeleteSubscriptionResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/subscription/UpdateSubscriptionResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/ISubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/ISubscriptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/SubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/SubscriptionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +157,8 @@
       <workItem from="1582241255361" duration="3248000" />
       <workItem from="1583101108038" duration="5667000" />
       <workItem from="1583186746297" duration="9508000" />
-      <workItem from="1583715285252" duration="2221000" />
+      <workItem from="1583715285252" duration="6179000" />
+      <workItem from="1583874489830" duration="1801000" />
     </task>
     <task id="LOCAL-00001" summary="adding client and subscription methods">
       <created>1581278189090</created>
@@ -208,10 +210,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581234141447" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1583272792578">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1583736916743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583272792578" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583736916743" />
     <state x="590" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581320799772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -288,10 +290,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581316794843" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583715308621">
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583874490337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583715308621" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583874490337" />
     <state x="690" y="286" key="extract.method.dialog" timestamp="1581537896406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -308,10 +310,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1581321563576" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583120411504">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583736884578">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583120411504" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583736884578" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

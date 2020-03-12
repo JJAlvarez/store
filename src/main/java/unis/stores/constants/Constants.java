@@ -23,6 +23,10 @@ public class Constants {
     public static final String ROL_NAME_LABEL = "name";
     public static final String ROL_ID_LABEL = "id";
 
+    //Subscription Constants
+    public static final String SUBSCRIPTION_ID_LABEL = "id";
+    public static final String SUBSCRIPTION_NAME_LABEL = "name";
+
     //Vehicle Constants
     public static final String VEHICLE_ID_LABEL = "universalCode";
     public static final String VEHICLE_BRAND_LABEL = "brand";
