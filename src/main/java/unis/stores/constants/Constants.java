@@ -23,10 +23,22 @@ public class Constants {
     public static final String ROL_NAME_LABEL = "name";
     public static final String ROL_ID_LABEL = "id";
 
+    //Subscription Constants
+    public static final String SUBSCRIPTION_ID_LABEL = "id";
+    public static final String SUBSCRIPTION_NAME_LABEL = "name";
+
     //Vehicle Constants
     public static final String VEHICLE_ID_LABEL = "universalCode";
     public static final String VEHICLE_BRAND_LABEL = "brand";
     public static final String VEHICLE_LINE_LABEL = "line";
     public static final String VEHICLE_YEAR_LABEL = "year";
+
+    //Product Constants
+    public static final String PRODUCT_ID_LABEL = "id";
+    public static final String PRODUCT_NAME_LABEL = "name";
+    public static final String PRODUCT_DESCRIPTION_LABEL = "description";
+    public static final String PRODUCT_PART_NO_LABEL = "partNo";
+    public static final String PRODUCT_PRICE_LABEL = "price";
+    public static final String PRODUCT_PRICE_STOCK = "stock";
 
 }
