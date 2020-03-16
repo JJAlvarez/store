@@ -126,4 +126,44 @@ public class ProductController {
         }
     }
 
+    @PutMapping("/product/vehicle/add")
+    public ResponseEntity<AssignVehicleResult> assignVehicle(@RequestBody Map<String, String> body) {
+        if (!body.containsKey(Constants.PRODUCT_ID_LABEL) || !body.containsKey(Constants.VEHICLE_ID_LABEL))
+            return ResponseEntity.badRequest().body(new AssignVehicleResult(false, "Bad Request", null));
+
+        try {
+            int id = Integer.parseInt(body.get(Constants.PRODUCT_ID_LABEL));
+            String vehicleId = body.get(Constants.VEHICLE_ID_LABEL);
+
+            Product product = productService.assignVehicle(id, vehicleId);
+
+            if (product == null)
+                return ResponseEntity.badRequest().body(new AssignVehicleResult(false, "Error assigning the vehicle", null));
+            else
+                return ResponseEntity.ok().body(new AssignVehicleResult(true, "Vehicle assigned", product));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(new AssignVehicleResult(false, e.getMessage(), null));
+        }
+    }
+
+    @PutMapping("/product/vehicle/remove")
+    public ResponseEntity<UnAssignVehicleResult> unAssignVehicle(@RequestBody Map<String, String> body) {
+        if (!body.containsKey(Constants.PRODUCT_ID_LABEL) || !body.containsKey(Constants.VEHICLE_ID_LABEL))
+            return ResponseEntity.badRequest().body(new UnAssignVehicleResult(false, "Bad Request", null));
+
+        try {
+            int id = Integer.parseInt(body.get(Constants.PRODUCT_ID_LABEL));
+            String vehicleId = body.get(Constants.VEHICLE_ID_LABEL);
+
+            Product product = productService.unAssignVehicle(id, vehicleId);
+
+            if (product == null)
+                return ResponseEntity.badRequest().body(new UnAssignVehicleResult(false, "Error un assigning the vehicle", null));
+            else
+                return ResponseEntity.ok().body(new UnAssignVehicleResult(true, "Vehicle un assigned", product));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(new UnAssignVehicleResult(false, e.getMessage(), null));
+        }
+    }
+
 }

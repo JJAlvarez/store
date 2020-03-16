@@ -6,17 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/product/CreateProductResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/product/DeleteProductResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/product/GetProductResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/product/UpdateProductResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/product/UpdateProductStockResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/product/AssignVehicleResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/product/UnAssignVehicleResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/IProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ProductController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +155,7 @@
       <workItem from="1583186746297" duration="9508000" />
       <workItem from="1583715285252" duration="6179000" />
       <workItem from="1583874489830" duration="3084000" />
-      <workItem from="1584319534971" duration="3956000" />
+      <workItem from="1584319534971" duration="5147000" />
     </task>
     <task id="LOCAL-00001" summary="adding client and subscription methods">
       <created>1581278189090</created>
@@ -214,10 +207,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581234141447" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1584323988237">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1584324583259">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584323988237" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584324583259" />
     <state x="590" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581320799772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -310,18 +303,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583102923069" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1583272699743">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1584324441555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583272699743" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584324441555" />
     <state x="552" y="179" key="scopes" timestamp="1581321563576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1581321563576" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584321922359">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584324425511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584321922359" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584324425511" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
