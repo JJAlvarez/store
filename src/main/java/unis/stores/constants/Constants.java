@@ -39,6 +39,6 @@ public class Constants {
     public static final String PRODUCT_DESCRIPTION_LABEL = "description";
     public static final String PRODUCT_PART_NO_LABEL = "partNo";
     public static final String PRODUCT_PRICE_LABEL = "price";
-    public static final String PRODUCT_PRICE_STOCK = "stock";
+    public static final String PRODUCT_STOCK_LABEL = "stock";
 
 }

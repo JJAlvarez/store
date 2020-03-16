@@ -10,8 +10,8 @@ public interface IProductService {
     Product getProduct(int id);
     List<Product> searchProduct(String name, String description, String partNo, double price);
     Product createProduct(String name, String description, String partNo, double price, int stock);
-    Product assignVehicle(int id, int vehicleId);
-    Product unAssignVehicle(int id, int vehicleId);
+    Product assignVehicle(int id, String vehicleId);
+    Product unAssignVehicle(int id, String vehicleId);
     Product updateProduct(int id, String name, String description, String partNo, double price);
     Product updateStock(int id, int stock);
     boolean deleteProduct(int id);
