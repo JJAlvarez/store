@@ -41,7 +41,7 @@ public class Product {
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "vehicle_products", joinColumns = {@JoinColumn(referencedColumnName = "id")},
-        inverseJoinColumns = {@JoinColumn(referencedColumnName = "id")})
+        inverseJoinColumns = {@JoinColumn(referencedColumnName = "universal_code")})
     private List<Vehicle> vehicles;
 
     public Product() {

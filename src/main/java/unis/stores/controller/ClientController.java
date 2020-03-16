@@ -14,6 +14,7 @@ import unis.stores.services.client.ClientService;
 
 import java.util.Map;
 
+@CrossOrigin
 @Controller
 public class ClientController {
 

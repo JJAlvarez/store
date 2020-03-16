@@ -14,6 +14,7 @@ import unis.stores.services.rol.RolService;
 
 import java.util.Map;
 
+@CrossOrigin
 @Controller
 public class RolController {
 
