@@ -41,4 +41,8 @@ public class Constants {
     public static final String PRODUCT_PRICE_LABEL = "price";
     public static final String PRODUCT_STOCK_LABEL = "stock";
 
+    //Brand Constants
+    public static final String BRAND_ID_LABEL = "id";
+    public static final String BRAND_NAME_LABEL = "name";
+
 }

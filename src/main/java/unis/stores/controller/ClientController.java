@@ -54,9 +54,6 @@ public class ClientController {
                 !body.containsKey(Constants.CLIENT_SUBSCRIPTION_LABEL))
             return ResponseEntity.badRequest().body(new UpdateClientResult(false, "Bad Request"));
 
-        if (clientService.searchByNit(body.get(Constants.CLIENT_NIT_LABEL)) != null)
-            return ResponseEntity.badRequest().body(new UpdateClientResult(false, "The client already exists"));
-
         try {
 
             Client updatedClient = clientService.updateClient(Integer.parseInt(body.get(Constants.CLIENT_SUBSCRIPTION_LABEL)), body.get(Constants.CLIENT_NAME_LABEL),

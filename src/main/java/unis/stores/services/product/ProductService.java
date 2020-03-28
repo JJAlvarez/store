@@ -61,7 +61,7 @@ public class ProductService implements IProductService {
 
     @Override
     public Product unAssignVehicle(int id, String vehicleId) {
-        if (!productRepository.exists(id) || vehicleRepository.exists(vehicleId))
+        if (!productRepository.exists(id) || !vehicleRepository.exists(vehicleId))
             return null;
 
         Vehicle vehicle = vehicleRepository.findOne(vehicleId);
