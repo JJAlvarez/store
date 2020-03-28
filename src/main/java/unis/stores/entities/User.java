@@ -14,7 +14,7 @@ public class User {
             strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
             parameters = {
                     @Parameter(name = "sequence_name", value = "USER_ID_SEQUENCE"),
-                    @Parameter(name = "initial_value", value = "1"),
+                    @Parameter(name = "initial_value", value = "3"),
                     @Parameter(name = "increment_size", value = "1")
             }
     )

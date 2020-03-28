@@ -12,6 +12,7 @@ import unis.stores.services.vehicle.VehicleService;
 
 import java.util.Map;
 
+@CrossOrigin
 @Controller
 public class ProductController {
 

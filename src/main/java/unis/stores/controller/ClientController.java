@@ -14,6 +14,7 @@ import unis.stores.services.client.ClientService;
 
 import java.util.Map;
 
+@CrossOrigin
 @Controller
 public class ClientController {
 
@@ -52,9 +53,6 @@ public class ClientController {
                 !body.containsKey(Constants.CLIENT_PHONE_LABEL) || !body.containsKey(Constants.CLIENT_IMAGE_LABEL) ||
                 !body.containsKey(Constants.CLIENT_SUBSCRIPTION_LABEL))
             return ResponseEntity.badRequest().body(new UpdateClientResult(false, "Bad Request"));
-
-        if (clientService.searchByNit(body.get(Constants.CLIENT_NIT_LABEL)) != null)
-            return ResponseEntity.badRequest().body(new UpdateClientResult(false, "The client already exists"));
 
         try {
 

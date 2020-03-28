@@ -8,27 +8,27 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity(name = "subscription")
-public class Subscription {
+@Entity
+public class Brand {
 
     @Id
     @GenericGenerator(
-            name = "idSubscriptionSequenceGenerator",
+            name = "idBrandSequenceGenerator",
             strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
             parameters = {
-                    @Parameter(name = "sequence_name", value = "SUBSCRIPTION_ID_SEQUENCE"),
-                    @Parameter(name = "initial_value", value = "3"),
+                    @Parameter(name = "sequence_name", value = "BRAND_ID_SEQUENCE"),
+                    @Parameter(name = "initial_value", value = "1"),
                     @Parameter(name = "increment_size", value = "1")
             }
     )
     @Column(name = "id")
-    @GeneratedValue(generator = "idSubscriptionSequenceGenerator")
+    @GeneratedValue(generator = "idBrandSequenceGenerator")
     private int id;
 
     @Column(name = "name")
-    public String name;
+    private String name;
 
-    public Subscription() {
+    public Brand() {
     }
 
     public int getId() {

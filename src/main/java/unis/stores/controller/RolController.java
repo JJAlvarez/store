@@ -14,6 +14,7 @@ import unis.stores.services.rol.RolService;
 
 import java.util.Map;
 
+@CrossOrigin
 @Controller
 public class RolController {
 
@@ -40,9 +41,6 @@ public class RolController {
     public ResponseEntity<Object> update(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.ROL_NAME_LABEL) || !body.containsKey(Constants.ROL_ID_LABEL))
             return ResponseEntity.badRequest().body(new UpdateRolResult(false, "Bad Request"));
-
-        if (rolService.searchByName(body.get(Constants.ROL_NAME_LABEL)) != null)
-            return ResponseEntity.badRequest().body(new UpdateRolResult(false, "The rol already exists!"));
 
         try {
             int rolId = Integer.parseInt(body.get(Constants.ROL_ID_LABEL));
