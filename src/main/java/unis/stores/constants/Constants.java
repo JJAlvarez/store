@@ -53,4 +53,8 @@ public class Constants {
     public static final String ORDER_STATE_ID_LABEL = "id";
     public static final String ORDER_STATE_NAME_LABEL = "name";
 
+    //Request State Constants
+    public static final String REQUEST_STATE_ID_LABEL = "id";
+    public static final String REQUEST_STATE_NAME_LABEL = "name";
+
 }
