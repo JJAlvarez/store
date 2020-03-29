@@ -49,4 +49,8 @@ public class Constants {
     public static final String LINE_ID_LABEL = "id";
     public static final String LINE_NAME_LABEL = "name";
 
+    //Order State Constants
+    public static final String ORDER_STATE_ID_LABEL = "id";
+    public static final String ORDER_STATE_NAME_LABEL = "name";
+
 }

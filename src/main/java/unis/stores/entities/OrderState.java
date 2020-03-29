@@ -9,26 +9,26 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Line {
+public class OrderState {
 
     @Id
     @GenericGenerator(
-            name = "idLineSequenceGenerator",
+            name = "idOrderStateSequenceGenerator",
             strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
             parameters = {
-                    @Parameter(name = "sequence_name", value = "LINE_ID_SEQUENCE"),
+                    @Parameter(name = "sequence_name", value = "ORDER_STATE_ID_SEQUENCE"),
                     @Parameter(name = "initial_value", value = "1"),
                     @Parameter(name = "increment_size", value = "1")
             }
     )
     @Column(name = "id")
-    @GeneratedValue(generator = "idLineSequenceGenerator")
+    @GeneratedValue(generator = "idOrderStateSequenceGenerator")
     private int id;
 
     @Column(name = "name")
     private String name;
 
-    public Line() {
+    public OrderState() {
     }
 
     public int getId() {
