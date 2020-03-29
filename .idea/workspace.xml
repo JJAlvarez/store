@@ -6,21 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/BrandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/BrandRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/brand/CreateBrandResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/brand/DeleteBrandResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/brand/GetBrandResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/brand/UpdateBrandResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/brand/BrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/brand/IBrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/LineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Line.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/LineRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/line/CreateLineResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/line/DeleteLineResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/line/GetLineResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/line/UpdateLineResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/line/ILineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/line/LineService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RolController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,10 +208,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1581234060029" />
-    <state x="552" y="179" key="#Auto_Import" timestamp="1584824399869">
+    <state x="552" y="179" key="#Auto_Import" timestamp="1585468247578">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#Auto_Import/0.0.1920.1040@0.0.1920.1040" timestamp="1584824399869" />
+    <state x="552" y="179" key="#Auto_Import/0.0.1920.1040@0.0.1920.1040" timestamp="1585468247578" />
     <state x="552" y="179" key="#SQL_Dialects" timestamp="1581229451359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -224,10 +220,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581234141447" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1584824693134">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1585468635894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584824693134" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585468635894" />
     <state x="590" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581320799772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -324,10 +320,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583102923069" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1584324441555">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1585468557553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584324441555" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585468557553" />
     <state x="552" y="179" key="scopes" timestamp="1581321563576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
