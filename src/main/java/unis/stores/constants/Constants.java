@@ -45,4 +45,8 @@ public class Constants {
     public static final String BRAND_ID_LABEL = "id";
     public static final String BRAND_NAME_LABEL = "name";
 
+    //Line Constants
+    public static final String LINE_ID_LABEL = "id";
+    public static final String LINE_NAME_LABEL = "name";
+
 }
