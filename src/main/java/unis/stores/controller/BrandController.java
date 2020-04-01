@@ -14,6 +14,7 @@ import unis.stores.services.brand.BrandService;
 
 import java.util.Map;
 
+@CrossOrigin
 @Controller
 public class BrandController {
 

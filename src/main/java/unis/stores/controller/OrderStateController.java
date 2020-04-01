@@ -14,6 +14,7 @@ import unis.stores.services.orderstate.OrderStateService;
 
 import java.util.Map;
 
+@CrossOrigin
 @Controller
 public class OrderStateController {
 

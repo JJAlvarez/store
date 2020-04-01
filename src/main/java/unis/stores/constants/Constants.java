@@ -57,4 +57,10 @@ public class Constants {
     public static final String REQUEST_STATE_ID_LABEL = "id";
     public static final String REQUEST_STATE_NAME_LABEL = "name";
 
+    //Fabric Constants
+    public static final String FABRIC_ID_LABEL = "id";
+    public static final String FABRIC_NAME_LABEL = "name";
+    public static final String FABRIC_IP_LABEL = "ip";
+    public static final String FABRIC_SERVICE_PASS_LABEL = "servicePassword";
+
 }
