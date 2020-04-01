@@ -14,6 +14,7 @@ import unis.stores.services.line.LineService;
 
 import java.util.Map;
 
+@CrossOrigin
 @Controller
 public class LineController {
 

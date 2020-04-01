@@ -14,6 +14,7 @@ import unis.stores.services.requeststate.RequestStateService;
 
 import java.util.Map;
 
+@CrossOrigin
 @Controller
 public class RequestStateController {
 
