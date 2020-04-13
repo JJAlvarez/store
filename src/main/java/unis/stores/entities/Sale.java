@@ -33,10 +33,11 @@ public class Sale {
     @OneToOne
     private Client client;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "product_sale", joinColumns = {@JoinColumn(referencedColumnName = "id")},
-            inverseJoinColumns = {@JoinColumn(referencedColumnName = "id")})
-    private List<Product> products;
+    @OneToOne
+    private OrderState orderState;
+
+    @OneToMany
+    private List<ProductSale> productSales;
 
     public Sale() {
     }
@@ -73,11 +74,19 @@ public class Sale {
         this.client = client;
     }
 
-    public List<Product> getProducts() {
-        return products;
+    public OrderState getOrderState() {
+        return orderState;
     }
 
-    public void setProducts(List<Product> products) {
-        this.products = products;
+    public void setOrderState(OrderState orderState) {
+        this.orderState = orderState;
+    }
+
+    public List<ProductSale> getProductSales() {
+        return productSales;
+    }
+
+    public void setProductSales(List<ProductSale> productSales) {
+        this.productSales = productSales;
     }
 }

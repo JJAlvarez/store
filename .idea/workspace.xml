@@ -6,15 +6,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RequestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/RequestRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/request/CreateRequestResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/request/GetRequestResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/request/UpdateRequestStateResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/request/IRequestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/request/RequestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/SaleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/ProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/ProductSale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/SaleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/sale/CreateSaleResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/sale/GetSaleResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/result/sale/UpdateSaleStateResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/sale/ISaleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/sale/SaleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/MainApplicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/MainApplicationClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Sale.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,9 +113,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.3321839" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -168,7 +175,10 @@
       <workItem from="1584746187488" duration="4138000" />
       <workItem from="1585178368312" duration="3710000" />
       <workItem from="1585782301270" duration="603000" />
-      <workItem from="1585800556308" duration="1975000" />
+      <workItem from="1585800556308" duration="6432000" />
+      <workItem from="1585938561238" duration="1279000" />
+      <workItem from="1586028542574" duration="7094000" />
+      <workItem from="1586659024479" duration="2999000" />
     </task>
     <task id="LOCAL-00001" summary="adding client and subscription methods">
       <created>1581278189090</created>
@@ -220,10 +230,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581234141447" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1585757732662">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1586755609034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585757732662" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586755609034" />
     <state x="590" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581320799772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -296,18 +306,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="938" height="213" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584402352499" />
-    <state x="440" y="95" key="SettingsEditor" timestamp="1584467465273">
+    <state x="440" y="95" key="SettingsEditor" timestamp="1585936055678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584467465273" />
+    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585936055678" />
     <state x="552" y="242" key="Vcs.Push.Dialog.v2" timestamp="1581316794843">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581316794843" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585800568537">
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586659161514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585800568537" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586659161514" />
     <state x="758" y="210" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585418507362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -316,14 +326,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="286" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581537896406" />
-    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1583102923069">
+    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1585934629240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583102923069" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1585468557553">
+    <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585934629240" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1586031597762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585468557553" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586031597762" />
     <state x="552" y="179" key="scopes" timestamp="1581321563576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -27,10 +27,8 @@ public class Request {
     @Column(name = "date")
     private Date date;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "product_request", joinColumns = {@JoinColumn(referencedColumnName = "id")},
-            inverseJoinColumns = {@JoinColumn(referencedColumnName = "id")})
-    private List<Product> products;
+    @OneToMany
+    private List<ProductRequest> productRequests;
 
     @OneToOne
     private Fabric fabric;
@@ -57,12 +55,12 @@ public class Request {
         this.date = date;
     }
 
-    public List<Product> getProducts() {
-        return products;
+    public List<ProductRequest> getProductRequests() {
+        return productRequests;
     }
 
-    public void setProducts(List<Product> products) {
-        this.products = products;
+    public void setProductRequests(List<ProductRequest> productRequests) {
+        this.productRequests = productRequests;
     }
 
     public Fabric getFabric() {
