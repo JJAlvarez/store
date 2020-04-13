@@ -1,6 +1,5 @@
 package unis.stores.controller;
 
-import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -44,7 +43,7 @@ public class RequestController {
 
     @PostMapping("/request")
     public ResponseEntity<Object> create(Request request) {
-        if (request.getDate() == null || request.getFabric() == null || request.getProducts() == null || request.getProducts().size() == 0)
+        if (request.getDate() == null || request.getFabric() == null || request.getProductRequests() == null || request.getProductRequests().size() == 0)
             return ResponseEntity.badRequest().body(new CreateRequestResult(false, "Bad Request", null));
 
         Request createdRequest = requestService.createRequest(request);

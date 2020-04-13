@@ -7,6 +7,7 @@
     <groupId>unis.stores</groupId>
     <artifactId>Stores</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -23,6 +24,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -45,10 +52,14 @@
     </properties>
 
     <build>
+        <finalName>${artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -57,6 +68,19 @@
                 <configuration>
                     <show>private</show>
                     <nohelp>true</nohelp>
+                </configuration>
+            </plugin>
+            <!-- Configure the Tomcat Maven plugin -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.0</version>
+                <configuration>
+                    <server>maven-tomcat-war-deployment-server</server> 
+                    <username>war-deployer</username>
+                    <password>maven-tomcat-plugin</password>
+                    <url>http://localhost:8080/manager/text</url>
+                    <path>/store</path>
                 </configuration>
             </plugin>
         </plugins>
