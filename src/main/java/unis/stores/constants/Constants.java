@@ -26,6 +26,7 @@ public class Constants {
     //Subscription Constants
     public static final String SUBSCRIPTION_ID_LABEL = "id";
     public static final String SUBSCRIPTION_NAME_LABEL = "name";
+    public static final String SUBSCRIPTION_DISCOUNT_LABEL = "discount";
 
     //Vehicle Constants
     public static final String VEHICLE_ID_LABEL = "universalCode";

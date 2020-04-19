@@ -42,7 +42,7 @@ public class SaleController {
     }
 
     @PostMapping("/sale")
-    public ResponseEntity<Object> create(Sale sale) {
+    public ResponseEntity<Object> create(@RequestBody Sale sale) {
         if (sale.getDate() == null || sale.getTotal() == 0 || sale.getClient() == null || sale.getProductSales().size() == 0
         || sale.getOrderState() == null)
             return ResponseEntity.badRequest().body(new CreateSaleResult(false, "Bad Request", null));
@@ -56,7 +56,7 @@ public class SaleController {
     }
 
     @PutMapping("/sale")
-    public ResponseEntity<Object> update(Sale sale) {
+    public ResponseEntity<Object> update(@RequestBody Sale sale) {
         if (sale.getOrderState() == null || sale.getId() == 0)
             return ResponseEntity.badRequest().body(new CreateSaleResult(false, "Bad Request", null));
 

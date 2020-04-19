@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity(name = "client")
 public class Client {
@@ -37,6 +38,9 @@ public class Client {
     @Column(name = "image")
     @Lob
     private String image;
+
+    @Column(name = "sub_expire_date")
+    private Date subExpireDate;
 
     @OneToOne
     private Subscription subscription;
@@ -98,5 +102,13 @@ public class Client {
 
     public void setSubscription(Subscription subscription) {
         this.subscription = subscription;
+    }
+
+    public Date getSubExpireDate() {
+        return subExpireDate;
+    }
+
+    public void setSubExpireDate(Date subExpireDate) {
+        this.subExpireDate = subExpireDate;
     }
 }

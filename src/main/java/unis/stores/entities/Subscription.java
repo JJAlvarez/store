@@ -28,6 +28,9 @@ public class Subscription {
     @Column(name = "name")
     public String name;
 
+    @Column(name = "discount")
+    public int discount;
+
     public Subscription() {
     }
 
@@ -45,5 +48,13 @@ public class Subscription {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(int discount) {
+        this.discount = discount;
     }
 }

@@ -7,7 +7,7 @@ import java.util.List;
 public interface ISubscriptionService {
     List<Subscription> getSubscriptions();
     Subscription getSubscriptionById(int id);
-    Subscription createSubscription(String name);
-    Subscription updateSubscription(int id, String name);
+    Subscription createSubscription(String name, int discount);
+    Subscription updateSubscription(int id, String name, int discount);
     boolean deleteSubscription(int id);
 }

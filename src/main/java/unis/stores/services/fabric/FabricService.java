@@ -6,6 +6,7 @@ import unis.stores.entities.Brand;
 import unis.stores.entities.Fabric;
 import unis.stores.repositories.FabricRepository;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -30,6 +31,7 @@ public class FabricService implements IFabricService {
         fabric.setName(name);
         fabric.setIp(ip);
         fabric.setServicePassword(servicePassword);
+        fabric.setLastDateRequest(new Date());
 
         return fabricRepository.save(fabric);
     }

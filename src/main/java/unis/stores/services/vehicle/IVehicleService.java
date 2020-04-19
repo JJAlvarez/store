@@ -8,7 +8,7 @@ public interface IVehicleService {
 
     List<Vehicle> getVehicles();
     Vehicle getVehicle(String universalCode);
-    Vehicle createVehicle(String universalCode, String brand, String line, String year);
-    Vehicle updateVehicle(String universalCode, String brand, String line, String year);
+    Vehicle createVehicle(String universalCode, int brand, int line, String year);
+    Vehicle updateVehicle(String universalCode, int brand, int line, String year);
     boolean deleteVehicle(String universalCode);
 }

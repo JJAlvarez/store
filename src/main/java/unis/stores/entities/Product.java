@@ -102,4 +102,21 @@ public class Product {
     public void setVehicles(List<Vehicle> vehicles) {
         this.vehicles = vehicles;
     }
+
+    public double getSalePrice() {
+        return round(this.price * 1.90, 2);
+    }
+
+    public double getValueWithoutIVA() {
+        return round(getSalePrice() / 1.12, 2);
+    }
+
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
+    }
 }

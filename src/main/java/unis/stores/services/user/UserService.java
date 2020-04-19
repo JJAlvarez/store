@@ -12,11 +12,15 @@ import java.util.List;
 @Service
 public class UserService implements IUserService {
 
-    @Autowired
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
+
+    private final RolRepository rolRepository;
 
     @Autowired
-    private RolRepository rolRepository;
+    public UserService(UserRepository userRepository, RolRepository rolRepository) {
+        this.userRepository = userRepository;
+        this.rolRepository = rolRepository;
+    }
 
     @Override
     public List<User> getUsers() {
@@ -30,6 +34,10 @@ public class UserService implements IUserService {
 
     @Override
     public User createUser(String firstName, String lastName, String username, String password, int rolId) {
+        if (firstName == null || firstName.isEmpty() || lastName == null || lastName.isEmpty() || username == null
+            || username.isEmpty() || password == null || password.isEmpty() || rolId == 0)
+            return null;
+
         User newUser = new User();
         newUser.setFirstName(firstName);
         newUser.setLastName(lastName);

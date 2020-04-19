@@ -11,6 +11,7 @@ public interface IClientService {
     Client createClient(String name, String nit, String email, String phone, String image, int subscriptionId);
     Client updateClient(int id, String name, String nit, String email, String phone, String image, int subscriptionId);
     boolean deleteClient(int id);
+    Client renewMembership(int id);
 
     Client searchByNit(String nit);
 }

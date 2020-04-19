@@ -74,6 +74,11 @@ public class ClientService implements IClientService {
     }
 
     @Override
+    public Client renewMembership(int id) {
+        return null;
+    }
+
+    @Override
     public Client searchByNit(String nit) {
         return clientRepository.findByNit(nit);
     }

@@ -27,16 +27,23 @@ public class VehicleController {
             !body.containsKey(Constants.VEHICLE_LINE_LABEL) || !body.containsKey(Constants.VEHICLE_YEAR_LABEL))
             return ResponseEntity.badRequest().body(new CreateVehicleResult(false, "Bad Request"));
 
-        if (vehicleService.getVehicle(body.get(Constants.VEHICLE_ID_LABEL)) != null)
-            return ResponseEntity.badRequest().body(new CreateVehicleResult(false, "Vehicle already exists!"));
+        try {
+            if (vehicleService.getVehicle(body.get(Constants.VEHICLE_ID_LABEL)) != null)
+                return ResponseEntity.badRequest().body(new CreateVehicleResult(false, "Vehicle already exists!"));
 
-        Vehicle vehicle = vehicleService.createVehicle(body.get(Constants.VEHICLE_ID_LABEL), body.get(Constants.VEHICLE_BRAND_LABEL),
-                body.get(Constants.VEHICLE_LINE_LABEL), body.get(Constants.VEHICLE_YEAR_LABEL));
+            int brandId = Integer.parseInt(body.get(Constants.VEHICLE_BRAND_LABEL));
+            int lineId = Integer.parseInt(body.get(Constants.VEHICLE_LINE_LABEL));
 
-        if (vehicle == null)
-            return ResponseEntity.badRequest().body(new CreateVehicleResult(false, "Error creating the vehicle"));
-        else
-            return ResponseEntity.ok().body(vehicle);
+            Vehicle vehicle = vehicleService.createVehicle(body.get(Constants.VEHICLE_ID_LABEL), brandId,
+                    lineId, body.get(Constants.VEHICLE_YEAR_LABEL));
+
+            if (vehicle == null)
+                return ResponseEntity.badRequest().body(new CreateVehicleResult(false, "Error creating the vehicle"));
+            else
+                return ResponseEntity.ok().body(vehicle);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(new CreateVehicleResult(false, e.getMessage()));
+        }
     }
 
     @PutMapping("/vehicle")
@@ -45,13 +52,20 @@ public class VehicleController {
                 !body.containsKey(Constants.VEHICLE_LINE_LABEL) || !body.containsKey(Constants.VEHICLE_YEAR_LABEL))
             return ResponseEntity.badRequest().body(new UpdateVehicleResult(false, "Bad Request"));
 
-        Vehicle updatedVehicle = vehicleService.updateVehicle(body.get(Constants.VEHICLE_ID_LABEL), body.get(Constants.VEHICLE_BRAND_LABEL),
-                body.get(Constants.VEHICLE_LINE_LABEL), body.get(Constants.VEHICLE_YEAR_LABEL));
+        try {
+            int brandId = Integer.parseInt(body.get(Constants.VEHICLE_BRAND_LABEL));
+            int lineId = Integer.parseInt(body.get(Constants.VEHICLE_LINE_LABEL));
 
-        if (updatedVehicle == null)
-            return ResponseEntity.badRequest().body(new UpdateVehicleResult(false, "Error updating the vehicle"));
-        else
-            return ResponseEntity.ok().body(updatedVehicle);
+            Vehicle updatedVehicle = vehicleService.updateVehicle(body.get(Constants.VEHICLE_ID_LABEL), brandId,
+                    lineId, body.get(Constants.VEHICLE_YEAR_LABEL));
+
+            if (updatedVehicle == null)
+                return ResponseEntity.badRequest().body(new UpdateVehicleResult(false, "Error updating the vehicle"));
+            else
+                return ResponseEntity.ok().body(updatedVehicle);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(new UpdateVehicleResult(false, e.getMessage()));
+        }
     }
 
     @DeleteMapping("/vehicle/{id}")

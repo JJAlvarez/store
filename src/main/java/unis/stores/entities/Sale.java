@@ -24,7 +24,7 @@ public class Sale {
     @GeneratedValue(generator = "idSaleSequenceGenerator")
     private int id;
 
-    @Column(name = "date")
+    @Column(name = "sale_date")
     private Date date;
 
     @Column(name = "total")

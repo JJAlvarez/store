@@ -27,22 +27,24 @@ public class SubscriptionService implements ISubscriptionService {
     }
 
     @Override
-    public Subscription createSubscription(String name) {
+    public Subscription createSubscription(String name, int discount) {
         Subscription newSubscription = new Subscription();
 
         newSubscription.setName(name);
+        newSubscription.setDiscount(discount);
 
         return subscriptionRepository.save(newSubscription);
     }
 
     @Override
-    public Subscription updateSubscription(int id, String name) {
+    public Subscription updateSubscription(int id, String name, int discount) {
         if (!subscriptionRepository.exists(id))
             return null;
 
         Subscription updateSubscription = subscriptionRepository.findOne(id);
 
         updateSubscription.setName(name);
+        updateSubscription.setDiscount(discount);
 
         return subscriptionRepository.save(updateSubscription);
     }

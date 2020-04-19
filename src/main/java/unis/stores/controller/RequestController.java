@@ -42,7 +42,7 @@ public class RequestController {
     }
 
     @PostMapping("/request")
-    public ResponseEntity<Object> create(Request request) {
+    public ResponseEntity<Object> create(@RequestBody Request request) {
         if (request.getDate() == null || request.getFabric() == null || request.getProductRequests() == null || request.getProductRequests().size() == 0)
             return ResponseEntity.badRequest().body(new CreateRequestResult(false, "Bad Request", null));
 
@@ -55,7 +55,7 @@ public class RequestController {
     }
 
     @PutMapping("/request")
-    public ResponseEntity<Object> update(Request request) {
+    public ResponseEntity<Object> update(@RequestBody Request request) {
         if (request.getRequestState() == null)
             return ResponseEntity.badRequest().body(new CreateRequestResult(false, "Bad Request", null));
 

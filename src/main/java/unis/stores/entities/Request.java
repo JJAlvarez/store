@@ -24,7 +24,7 @@ public class Request {
     @GeneratedValue(generator = "idRequestSequenceGenerator")
     private int id;
 
-    @Column(name = "date")
+    @Column(name = "request_date")
     private Date date;
 
     @OneToMany
