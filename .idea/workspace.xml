@@ -6,31 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/UnitTesting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/ProductRequestRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/MainApplicationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/MainApplicationClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RequestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/SaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/SaleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/SubscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/VehicleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Fabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Fabric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/ProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/ProductRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Subscription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/IClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/IClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/fabric/FabricService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/fabric/FabricService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/ISubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/ISubscriptionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/SubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/SubscriptionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/vehicle/IVehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/vehicle/IVehicleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/vehicle/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/vehicle/VehicleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/RequestState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/RequestState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/request/IRequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/request/IRequestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/request/RequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/request/RequestService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,8 +67,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -209,7 +195,7 @@
       <workItem from="1586804622813" duration="684000" />
       <workItem from="1586884688998" duration="10664000" />
       <workItem from="1587244944178" duration="2509000" />
-      <workItem from="1587249430639" duration="11663000" />
+      <workItem from="1587249430639" duration="20578000" />
     </task>
     <task id="LOCAL-00001" summary="adding client and subscription methods">
       <created>1581278189090</created>
@@ -253,6 +239,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Auto_Import/0.0.1920.1040@0.0.1920.1040" timestamp="1585468247578" />
+    <state x="552" y="179" key="#Inspections" timestamp="1587347042512">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1587347042512" />
     <state x="552" y="179" key="#SQL_Dialects" timestamp="1581229451359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,10 +255,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581234141447" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1587268151493">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1587345744724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587268151493" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587345744724" />
     <state x="590" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581320799772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -293,54 +283,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="318" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584564351989" />
-    <state width="1877" height="451" key="GridCell.Tab.0.bottom" timestamp="1587275855778">
+    <state width="1877" height="315" key="GridCell.Tab.0.bottom" timestamp="1587347448876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="451" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587275855778" />
-    <state width="1877" height="451" key="GridCell.Tab.0.center" timestamp="1587275855777">
+    <state width="1877" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587347448876" />
+    <state width="1877" height="315" key="GridCell.Tab.0.center" timestamp="1587347448876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="451" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587275855777" />
-    <state width="1877" height="451" key="GridCell.Tab.0.left" timestamp="1587275855777">
+    <state width="1877" height="315" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587347448876" />
+    <state width="1877" height="315" key="GridCell.Tab.0.left" timestamp="1587347448876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="451" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587275855777" />
-    <state width="1877" height="451" key="GridCell.Tab.0.right" timestamp="1587275855777">
+    <state width="1877" height="315" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587347448876" />
+    <state width="1877" height="315" key="GridCell.Tab.0.right" timestamp="1587347448876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="451" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587275855777" />
-    <state width="1877" height="309" key="GridCell.Tab.1.bottom" timestamp="1587275901962">
+    <state width="1877" height="315" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587347448876" />
+    <state width="1877" height="315" key="GridCell.Tab.1.bottom" timestamp="1587347480770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587275901962" />
-    <state width="1877" height="309" key="GridCell.Tab.1.center" timestamp="1587275901961">
+    <state width="1877" height="315" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587347480770" />
+    <state width="1877" height="315" key="GridCell.Tab.1.center" timestamp="1587347480770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587275901961" />
-    <state width="1877" height="309" key="GridCell.Tab.1.left" timestamp="1587275901961">
+    <state width="1877" height="315" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587347480770" />
+    <state width="1877" height="315" key="GridCell.Tab.1.left" timestamp="1587347480770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587275901961" />
-    <state width="1877" height="309" key="GridCell.Tab.1.right" timestamp="1587275901962">
+    <state width="1877" height="315" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587347480770" />
+    <state width="1877" height="315" key="GridCell.Tab.1.right" timestamp="1587347480770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587275901962" />
-    <state width="1877" height="451" key="GridCell.Tab.2.bottom" timestamp="1587275855505">
+    <state width="1877" height="315" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587347480770" />
+    <state width="1877" height="315" key="GridCell.Tab.2.bottom" timestamp="1587347448719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="451" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587275855505" />
-    <state width="1877" height="451" key="GridCell.Tab.2.center" timestamp="1587275855505">
+    <state width="1877" height="315" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587347448719" />
+    <state width="1877" height="315" key="GridCell.Tab.2.center" timestamp="1587347448719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="451" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587275855505" />
-    <state width="1877" height="451" key="GridCell.Tab.2.left" timestamp="1587275855505">
+    <state width="1877" height="315" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587347448719" />
+    <state width="1877" height="315" key="GridCell.Tab.2.left" timestamp="1587347448719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="451" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587275855505" />
-    <state width="1877" height="451" key="GridCell.Tab.2.right" timestamp="1587275855505">
+    <state width="1877" height="315" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587347448719" />
+    <state width="1877" height="315" key="GridCell.Tab.2.right" timestamp="1587347448719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="451" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587275855505" />
+    <state width="1877" height="315" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587347448719" />
     <state x="440" y="95" key="SettingsEditor" timestamp="1585936055678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -386,7 +376,18 @@
           <line>25</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/unis/stores/services/request/RequestService.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="request.productRequests" />
+        <watch expression="request.requestState" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

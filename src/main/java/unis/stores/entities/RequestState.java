@@ -1,5 +1,6 @@
 package unis.stores.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
@@ -23,9 +24,11 @@ public class RequestState {
     )
     @Column(name = "id")
     @GeneratedValue(generator = "idRequestStateSequenceGenerator")
+    @JsonProperty("id")
     private int id;
 
     @Column(name = "name")
+    @JsonProperty("name")
     private String name;
 
     public RequestState() {

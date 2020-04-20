@@ -1,5 +1,6 @@
 package unis.stores.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
@@ -24,18 +25,23 @@ public class Fabric {
     )
     @Column(name = "id")
     @GeneratedValue(generator = "idFabricSequenceGenerator")
+    @JsonProperty("id")
     private int id;
 
     @Column(name = "name")
+    @JsonProperty("name")
     private String name;
 
     @Column(name = "ip")
+    @JsonProperty("ip")
     private String ip;
 
     @Column(name = "service_password")
+    @JsonProperty("servicePassword")
     private String servicePassword;
 
     @Column(name = "last_date_request")
+    @JsonProperty("lastDateRequest")
     private Date lastDateRequest;
 
     public Fabric() {

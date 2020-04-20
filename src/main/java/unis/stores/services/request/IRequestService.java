@@ -10,4 +10,5 @@ public interface IRequestService {
     Request getRequest(int id);
     Request createRequest(Request request);
     Request updateRequestState(int id, int requestStateId);
+    Request receiveRequest(int id);
 }

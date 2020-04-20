@@ -1,5 +1,6 @@
 package unis.stores.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.ManyToAny;
 import org.hibernate.annotations.Parameter;
@@ -22,21 +23,27 @@ public class Product {
     )
     @Column(name = "id")
     @GeneratedValue(generator = "idProductSequenceGenerator")
+    @JsonProperty("id")
     private int id;
 
     @Column(name = "name")
+    @JsonProperty("name")
     private String name;
 
     @Column(name = "description")
+    @JsonProperty("description")
     private String description;
 
     @Column(name = "part_no")
+    @JsonProperty("partNo")
     private String partNo;
 
     @Column(name = "price")
+    @JsonProperty("price")
     private double price;
 
     @Column(name = "stock")
+    @JsonProperty("stock")
     private int stock;
 
     @ManyToMany(cascade = CascadeType.ALL)

@@ -1,5 +1,6 @@
 package unis.stores.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
@@ -22,18 +23,22 @@ public class Request {
     )
     @Column(name = "id")
     @GeneratedValue(generator = "idRequestSequenceGenerator")
+    @JsonProperty("id")
     private int id;
 
     @Column(name = "request_date")
     private Date date;
 
     @OneToMany
+    @JsonProperty("product")
     private List<ProductRequest> productRequests;
 
     @OneToOne
+    @JsonProperty("factory")
     private Fabric fabric;
 
     @OneToOne
+    @JsonProperty("status")
     private RequestState requestState;
 
     public Request() {

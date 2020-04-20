@@ -72,6 +72,12 @@ public class UserController {
             if (userService.getUserById(userId) == null)
                 return ResponseEntity.badRequest().body(new SignInResult(false, "User doesn't Exists!"));
 
+            if (body.containsKey(Constants.USER_ROL_ID_LABEL)){
+                int rolId = Integer.parseInt(body.get(Constants.USER_ROL_ID_LABEL));
+
+                userService.updateUserRol(userId, rolId);
+            }
+
             User userUpdated = userService.updateUser(userId, body.get(Constants.FIRST_NAME_LABEL), body.get(Constants.LAST_NAME_LABEL),
                     body.get(Constants.USERNAME_LABEL));
 
