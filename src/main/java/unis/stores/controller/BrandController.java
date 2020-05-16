@@ -18,9 +18,18 @@ import java.util.Map;
 @Controller
 public class BrandController {
 
+    /**
+     * The brand service to connect to the database
+     */
     @Autowired
     private BrandService brandService;
 
+    /**
+     * Create a brand in the system
+     *
+     * @param     body contains the information to create the brand
+     * @return    returns the result of the creation action
+     */
     @PostMapping("/brand")
     public ResponseEntity<Object> create(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.BRAND_NAME_LABEL))
@@ -37,6 +46,12 @@ public class BrandController {
             return ResponseEntity.ok(new CreateBrandResult(true, "Brand created", brand));
     }
 
+    /**
+     * Update a brand in the system
+     *
+     * @param     body contains the information to update the brand
+     * @return    returns the result of the update action
+     */
     @PutMapping("/brand")
     public ResponseEntity<Object> update(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.BRAND_ID_LABEL) || !body.containsKey(Constants.BRAND_NAME_LABEL))
@@ -55,6 +70,12 @@ public class BrandController {
         }
     }
 
+    /**
+     * Delete a brand in the system
+     *
+     * @param     id the id brand we want to delete
+     * @return    returns the result of the deletion action
+     */
     @DeleteMapping("/brand/{id}")
     public ResponseEntity<Object> delete(@PathVariable("id") String id) {
         if (id == null)
@@ -72,11 +93,22 @@ public class BrandController {
         }
     }
 
+    /**
+     * Gets the system brands
+     *
+     * @return    returns the list of brands in the system
+     */
     @GetMapping("/brand")
     public ResponseEntity<Object> index() {
         return ResponseEntity.ok(brandService.getBrands());
     }
 
+    /**
+     * Gets a brand
+     *
+     * @param     id the id of the brand we want to get
+     * @return    returns the founded brand
+     */
     @GetMapping("/brand/{id}")
     public ResponseEntity<Object> get(@PathVariable("id") String id) {
         if (id == null)

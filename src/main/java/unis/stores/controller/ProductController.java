@@ -16,12 +16,24 @@ import java.util.Map;
 @Controller
 public class ProductController {
 
+    /**
+     * The product service to connect to the database
+     */
     @Autowired
     private ProductService productService;
 
+    /**
+     * The vehicle service to connect to the database
+     */
     @Autowired
     private VehicleService vehicleService;
 
+    /**
+     * Create a product in the system
+     *
+     * @param     body contains the information to create the product
+     * @return    returns the result of the creation action
+     */
     @PostMapping("/product")
     public ResponseEntity<CreateProductResult> create(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.PRODUCT_NAME_LABEL) || !body.containsKey(Constants.PRODUCT_DESCRIPTION_LABEL)
@@ -32,8 +44,10 @@ public class ProductController {
         try {
             double price = Double.parseDouble(body.get(Constants.PRODUCT_PRICE_LABEL));
             int stock = Integer.parseInt(body.get(Constants.PRODUCT_STOCK_LABEL));
+            int fabricId = Integer.parseInt(body.get(Constants.PRODUCT_FABRIC_ID));
+
             Product product = productService.createProduct(body.get(Constants.PRODUCT_NAME_LABEL), body.get(Constants.PRODUCT_DESCRIPTION_LABEL),
-                    body.get(Constants.PRODUCT_PART_NO_LABEL), price, stock);
+                    body.get(Constants.PRODUCT_PART_NO_LABEL), price, stock, fabricId);
 
             if (product == null)
                 return ResponseEntity.badRequest().body(new CreateProductResult(false, "Error creating the product", null));
@@ -44,18 +58,26 @@ public class ProductController {
         }
     }
 
+    /**
+     * Update a product in the system
+     *
+     * @param     body contains the information to update the product
+     * @return    returns the result of the update action
+     */
     @PutMapping("/product")
     public ResponseEntity<UpdateProductResult> update(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.PRODUCT_NAME_LABEL) || !body.containsKey(Constants.PRODUCT_DESCRIPTION_LABEL)
                 || !body.containsKey(Constants.PRODUCT_PART_NO_LABEL) || !body.containsKey(Constants.PRODUCT_PRICE_LABEL)
-                || !body.containsKey(Constants.PRODUCT_ID_LABEL))
+                || !body.containsKey(Constants.PRODUCT_ID_LABEL) || !body.containsKey(Constants.PRODUCT_FABRIC_ID))
             return ResponseEntity.badRequest().body(new UpdateProductResult(false, "Bad Request", null));
 
         try {
             int id = Integer.parseInt(body.get(Constants.PRODUCT_ID_LABEL));
             double price = Double.parseDouble(body.get(Constants.PRODUCT_PRICE_LABEL));
+            int fabricId = Integer.parseInt(body.get(Constants.PRODUCT_FABRIC_ID));
+
             Product product = productService.updateProduct(id, body.get(Constants.PRODUCT_NAME_LABEL), body.get(Constants.PRODUCT_DESCRIPTION_LABEL),
-                    body.get(Constants.PRODUCT_PART_NO_LABEL), price);
+                    body.get(Constants.PRODUCT_PART_NO_LABEL), price, fabricId);
 
             if (product == null)
                 return ResponseEntity.badRequest().body(new UpdateProductResult(false, "Error updating the product", null));
@@ -66,6 +88,12 @@ public class ProductController {
         }
     }
 
+    /**
+     * Delete a product in the system
+     *
+     * @param     id the id product we want to delete
+     * @return    returns the result of the deletion action
+     */
     @DeleteMapping("/product/{id}")
     public ResponseEntity<DeleteProductResult> delete(@PathVariable("id") String id) {
         if (id == null)
@@ -83,11 +111,22 @@ public class ProductController {
         }
     }
 
+    /**
+     * Gets the system products
+     *
+     * @return    returns the list of products in the system
+     */
     @GetMapping("/product")
     public ResponseEntity<Object> index() {
         return ResponseEntity.ok().body(productService.getProducts());
     }
 
+    /**
+     * Gets a product
+     *
+     * @param     id the id of the product we want to get
+     * @return    returns the founded product
+     */
     @GetMapping("/product/{id}")
     public ResponseEntity<Object> get(@PathVariable("id") String id) {
         if (id == null)
@@ -107,6 +146,32 @@ public class ProductController {
         }
     }
 
+    /**
+     * Gets the products of an specific fabric
+     *
+     * @param     id the id of the fabric we want to get its products
+     * @return    returns the founded products
+     */
+    @GetMapping("/product/fabric/{id}")
+    public ResponseEntity<Object> getFabricProducts(@PathVariable("id") String id) {
+        if (id == null)
+            return ResponseEntity.badRequest().build();
+
+        try {
+            int fabricId = Integer.parseInt(id);
+
+            return ResponseEntity.ok(productService.searchByFabric(fabricId));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().build();
+        }
+    }
+
+    /**
+     * Update a product stock in the system
+     *
+     * @param     body contains the information to update the product
+     * @return    returns the result of the update action
+     */
     @PutMapping("/product/stock")
     public ResponseEntity<UpdateProductStockResult> updateStock(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.PRODUCT_STOCK_LABEL) || !body.containsKey(Constants.PRODUCT_ID_LABEL))
@@ -127,6 +192,12 @@ public class ProductController {
         }
     }
 
+    /**
+     * Assign a vehicle to a product in the system
+     *
+     * @param     body contains the information to make the assign
+     * @return    returns the result of the update action
+     */
     @PutMapping("/product/vehicle/add")
     public ResponseEntity<AssignVehicleResult> assignVehicle(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.PRODUCT_ID_LABEL) || !body.containsKey(Constants.VEHICLE_ID_LABEL))
@@ -147,6 +218,12 @@ public class ProductController {
         }
     }
 
+    /**
+     * Un assign a vehicle to a product in the system
+     *
+     * @param     body contains the information to make the un assign
+     * @return    returns the result of the update action
+     */
     @PutMapping("/product/vehicle/remove")
     public ResponseEntity<UnAssignVehicleResult> unAssignVehicle(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.PRODUCT_ID_LABEL) || !body.containsKey(Constants.VEHICLE_ID_LABEL))

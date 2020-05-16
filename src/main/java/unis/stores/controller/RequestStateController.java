@@ -18,9 +18,18 @@ import java.util.Map;
 @Controller
 public class RequestStateController {
 
+    /**
+     * The request state service to connect to the database
+     */
     @Autowired
     private RequestStateService requestStateService;
 
+    /**
+     * Create a request state in the system
+     *
+     * @param     body contains the information to create the request state
+     * @return    returns the result of the creation action
+     */
     @PostMapping("/request/state")
     public ResponseEntity<Object> create(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.REQUEST_STATE_NAME_LABEL))
@@ -37,6 +46,12 @@ public class RequestStateController {
             return ResponseEntity.ok(new CreateRequestStateResult(true, "RequestState created", requeststate));
     }
 
+    /**
+     * Update a request state in the system
+     *
+     * @param     body contains the information to update the request state
+     * @return    returns the result of the update action
+     */
     @PutMapping("/request/state")
     public ResponseEntity<Object> update(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.REQUEST_STATE_ID_LABEL) || !body.containsKey(Constants.REQUEST_STATE_NAME_LABEL))
@@ -55,6 +70,12 @@ public class RequestStateController {
         }
     }
 
+    /**
+     * Delete a request state in the system
+     *
+     * @param     id the id request state we want to delete
+     * @return    returns the result of the deletion action
+     */
     @DeleteMapping("/request/state/{id}")
     public ResponseEntity<Object> delete(@PathVariable("id") String id) {
         if (id == null)
@@ -72,11 +93,22 @@ public class RequestStateController {
         }
     }
 
+    /**
+     * Gets the system request states
+     *
+     * @return    returns the list of request states in the system
+     */
     @GetMapping("/request/state")
     public ResponseEntity<Object> index() {
         return ResponseEntity.ok(requestStateService.getRequestStates());
     }
 
+    /**
+     * Gets a request state
+     *
+     * @param     id the id of the request state we want to get
+     * @return    returns the founded request state
+     */
     @GetMapping("/request/state/{id}")
     public ResponseEntity<Object> get(@PathVariable("id") String id) {
         if (id == null)

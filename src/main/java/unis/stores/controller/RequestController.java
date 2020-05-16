@@ -14,14 +14,28 @@ import unis.stores.services.request.RequestService;
 @Controller
 public class RequestController {
 
+    /**
+     * The request service to connect to the database
+     */
     @Autowired
     private RequestService requestService;
 
+    /**
+     * Gets the system requests
+     *
+     * @return    returns the list of requests in the system
+     */
     @GetMapping("/request")
     public ResponseEntity<Object> index() {
         return ResponseEntity.ok().body(requestService.getRequests());
     }
 
+    /**
+     * Gets a request
+     *
+     * @param     id the id of the request we want to get
+     * @return    returns the founded request
+     */
     @GetMapping("/request/{id}")
     public ResponseEntity<Object> get(@PathVariable("id") String id) {
         if (id == null)
@@ -41,9 +55,15 @@ public class RequestController {
         }
     }
 
+    /**
+     * Create a request in the system
+     *
+     * @param     request contains the information to create the request
+     * @return    returns the result of the creation action
+     */
     @PostMapping("/request")
-    public ResponseEntity<Object> create(Request request) {
-        if (request.getDate() == null || request.getFabric() == null || request.getProductRequests() == null || request.getProductRequests().size() == 0)
+    public ResponseEntity<Object> create(@RequestBody Request request) {
+        if (request.getFabric() == null || request.getProductRequests() == null || request.getProductRequests().size() == 0)
             return ResponseEntity.badRequest().body(new CreateRequestResult(false, "Bad Request", null));
 
         Request createdRequest = requestService.createRequest(request);
@@ -54,16 +74,51 @@ public class RequestController {
             return ResponseEntity.ok(new CreateRequestResult(true, "Request created", createdRequest));
     }
 
-    @PutMapping("/request")
-    public ResponseEntity<Object> update(Request request) {
-        if (request.getRequestState() == null)
-            return ResponseEntity.badRequest().body(new CreateRequestResult(false, "Bad Request", null));
+    /**
+     * Cancel a sale request in the system
+     *
+     * @param     id is the id of the request we want to cancel
+     * @return    returns the result of the cancel action
+     */
+    @PutMapping("/request/cancel/{id}")
+    public ResponseEntity<Object> cancelRequest(@PathVariable("id") String id) {
+        if (id == null) {
+            return ResponseEntity.badRequest().body(new UpdateRequestStateResult(false, "Bad Request", null));
+        }
+        try {
+            int requestId = Integer.parseInt(id);
+            Request updatedRequest = requestService.updateRequestState(requestId, 3);
 
-        Request updatedRequest = requestService.updateRequestState(request.getId(), request.getRequestState().getId());
+            if (updatedRequest == null)
+                return ResponseEntity.badRequest().body(new UpdateRequestStateResult(false, "Error updating the request", null));
+            else
+                return ResponseEntity.ok(new UpdateRequestStateResult(false, "Request updated", updatedRequest));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(new UpdateRequestStateResult(false, "Bad Request", null));
+        }
+    }
 
-        if (updatedRequest == null)
-            return ResponseEntity.badRequest().body(new UpdateRequestStateResult(false, "Error updating the request", null));
-        else
-            return ResponseEntity.ok(new UpdateRequestStateResult(false, "Request updated", updatedRequest));
+    /**
+     * Receive a sale request in the system
+     *
+     * @param     id is the id of the request we want to receive
+     * @return    returns the result of the receive action
+     */
+    @PutMapping("/request/receive/{id}")
+    public ResponseEntity<Object> receiveRequest(@PathVariable("id") String id) {
+        if (id == null) {
+            return ResponseEntity.badRequest().body(new UpdateRequestStateResult(false, "Bad Request", null));
+        }
+        try {
+            int requestId = Integer.parseInt(id);
+            Request updatedRequest = requestService.receiveRequest(requestId);
+
+            if (updatedRequest == null)
+                return ResponseEntity.badRequest().body(new UpdateRequestStateResult(false, "Error updating the request", null));
+            else
+                return ResponseEntity.ok(new UpdateRequestStateResult(false, "Request updated", updatedRequest));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(new UpdateRequestStateResult(false, "Bad Request", null));
+        }
     }
 }

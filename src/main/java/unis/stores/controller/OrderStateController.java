@@ -18,9 +18,18 @@ import java.util.Map;
 @Controller
 public class OrderStateController {
 
+    /**
+     * The order state service to connect to the database
+     */
     @Autowired
     private OrderStateService orderstateService;
 
+    /**
+     * Create a order state in the system
+     *
+     * @param     body contains the information to create the order state
+     * @return    returns the result of the creation action
+     */
     @PostMapping("/order/state")
     public ResponseEntity<Object> create(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.ORDER_STATE_NAME_LABEL))
@@ -37,6 +46,12 @@ public class OrderStateController {
             return ResponseEntity.ok(new CreateOrderStateResult(true, "OrderState created", orderstate));
     }
 
+    /**
+     * Update a order state in the system
+     *
+     * @param     body contains the information to update the order state
+     * @return    returns the result of the update action
+     */
     @PutMapping("/order/state")
     public ResponseEntity<Object> update(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.ORDER_STATE_ID_LABEL) || !body.containsKey(Constants.ORDER_STATE_NAME_LABEL))
@@ -55,6 +70,12 @@ public class OrderStateController {
         }
     }
 
+    /**
+     * Delete a order state in the system
+     *
+     * @param     id the id order state we want to delete
+     * @return    returns the result of the deletion action
+     */
     @DeleteMapping("/order/state/{id}")
     public ResponseEntity<Object> delete(@PathVariable("id") String id) {
         if (id == null)
@@ -72,11 +93,22 @@ public class OrderStateController {
         }
     }
 
+    /**
+     * Gets the system order states
+     *
+     * @return    returns the list of order states in the system
+     */
     @GetMapping("/order/state")
     public ResponseEntity<Object> index() {
         return ResponseEntity.ok(orderstateService.getOrderStates());
     }
 
+    /**
+     * Gets a order state
+     *
+     * @param     id the id of the order state we want to get
+     * @return    returns the founded order state
+     */
     @GetMapping("/order/state/{id}")
     public ResponseEntity<Object> get(@PathVariable("id") String id) {
         if (id == null)
