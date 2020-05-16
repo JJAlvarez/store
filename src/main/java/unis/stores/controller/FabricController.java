@@ -18,9 +18,18 @@ import java.util.Map;
 @Controller
 public class FabricController {
 
+    /**
+     * The fabric service to connect to the database
+     */
     @Autowired
     private FabricService fabricService;
 
+    /**
+     * Create a fabric in the system
+     *
+     * @param     body contains the information to create the fabric
+     * @return    returns the result of the creation action
+     */
     @PostMapping("/fabric")
     public ResponseEntity<Object> create(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.FABRIC_IP_LABEL) || !body.containsKey(Constants.FABRIC_SERVICE_PASS_LABEL)
@@ -36,6 +45,12 @@ public class FabricController {
             return ResponseEntity.ok().body(fabric);
     }
 
+    /**
+     * Update a fabric in the system
+     *
+     * @param     body contains the information to update the fabric
+     * @return    returns the result of the update action
+     */
     @PutMapping("/fabric")
     public ResponseEntity<Object> update(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.FABRIC_ID_LABEL) || !body.containsKey(Constants.FABRIC_SERVICE_PASS_LABEL) ||
@@ -57,6 +72,12 @@ public class FabricController {
         }
     }
 
+    /**
+     * Delete a fabric in the system
+     *
+     * @param     id the id fabric we want to delete
+     * @return    returns the result of the deletion action
+     */
     @DeleteMapping("/fabric/{id}")
     public ResponseEntity<Object> delete(@PathVariable("id") String id) {
         if (id == null)
@@ -74,11 +95,22 @@ public class FabricController {
         }
     }
 
+    /**
+     * Gets the system fabrics
+     *
+     * @return    returns the list of fabrics in the system
+     */
     @GetMapping("/fabric")
     public ResponseEntity<Object> index() {
         return ResponseEntity.ok().body(fabricService.getFabrics());
     }
 
+    /**
+     * Gets a fabric
+     *
+     * @param     id the id of the fabric we want to get
+     * @return    returns the founded fabric
+     */
     @GetMapping("/fabric/{id}")
     public ResponseEntity<Object> get(@PathVariable("id") String id) {
         try {

@@ -18,9 +18,18 @@ import java.util.Map;
 @Controller
 public class ClientController {
 
+    /**
+     * The client service to connect to the database
+     */
     @Autowired
     private ClientService clientService;
 
+    /**
+     * Create a client in the system
+     *
+     * @param     body contains the information to create the client
+     * @return    returns the result of the creation action
+     */
     @PostMapping("/client")
     public ResponseEntity<Object> create(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.CLIENT_NAME_LABEL) || !body.containsKey(Constants.CLIENT_EMAIL_LABEL) ||
@@ -46,6 +55,12 @@ public class ClientController {
         }
     }
 
+    /**
+     * Update a client in the system
+     *
+     * @param     body contains the information to update the client
+     * @return    returns the result of the update action
+     */
     @PutMapping("/client")
     public ResponseEntity<Object> update(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.CLIENT_ID_LABEL) || !body.containsKey(Constants.CLIENT_NAME_LABEL) ||
@@ -56,9 +71,9 @@ public class ClientController {
 
         try {
 
-            Client updatedClient = clientService.updateClient(Integer.parseInt(body.get(Constants.CLIENT_SUBSCRIPTION_LABEL)), body.get(Constants.CLIENT_NAME_LABEL),
+            Client updatedClient = clientService.updateClient(Integer.parseInt(body.get(Constants.CLIENT_ID_LABEL)), body.get(Constants.CLIENT_NAME_LABEL),
                     body.get(Constants.CLIENT_NIT_LABEL), body.get(Constants.CLIENT_EMAIL_LABEL), body.get(Constants.CLIENT_PHONE_LABEL),
-                    body.get(Constants.CLIENT_IMAGE_LABEL), Integer.parseInt(body.get(Constants.CLIENT_ID_LABEL)));
+                    body.get(Constants.CLIENT_IMAGE_LABEL), Integer.parseInt(body.get(Constants.CLIENT_SUBSCRIPTION_LABEL)));
 
             if (updatedClient == null)
                 return ResponseEntity.badRequest().body(new UpdateClientResult(false, "Error updating the client"));
@@ -69,6 +84,12 @@ public class ClientController {
         }
     }
 
+    /**
+     * Delete a client in the system
+     *
+     * @param     id the id client we want to delete
+     * @return    returns the result of the deletion action
+     */
     @DeleteMapping("/client/{id}")
     public ResponseEntity<Object> delete(@PathVariable("id") String id) {
         if (id == null)
@@ -86,11 +107,22 @@ public class ClientController {
         }
     }
 
+    /**
+     * Gets the system clients
+     *
+     * @return    returns the list of clients in the system
+     */
     @GetMapping("/client")
     public ResponseEntity<Object> index() {
         return ResponseEntity.ok().body(clientService.getClients());
     }
 
+    /**
+     * Gets a client
+     *
+     * @param     id the id of the client we want to get
+     * @return    returns the founded client
+     */
     @GetMapping("/client/{id}")
     public ResponseEntity<Object> get(@PathVariable("id") String id) {
         try {

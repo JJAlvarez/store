@@ -18,9 +18,18 @@ import java.util.Map;
 @Controller
 public class VehicleController {
 
+    /**
+     * The vehicle service to connect to the database
+     */
     @Autowired
     private VehicleService vehicleService;
 
+    /**
+     * Create a vehicle in the system
+     *
+     * @param     body contains the information to create the vehicle
+     * @return    returns the result of the creation action
+     */
     @PostMapping("/vehicle")
     public ResponseEntity<Object> create(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.VEHICLE_ID_LABEL) || !body.containsKey(Constants.VEHICLE_BRAND_LABEL) ||
@@ -31,10 +40,10 @@ public class VehicleController {
             if (vehicleService.getVehicle(body.get(Constants.VEHICLE_ID_LABEL)) != null)
                 return ResponseEntity.badRequest().body(new CreateVehicleResult(false, "Vehicle already exists!"));
 
-            int brandId = Integer.parseInt(body.get(Constants.VEHICLE_BRAND_LABEL));
+            int vehicleId = Integer.parseInt(body.get(Constants.VEHICLE_BRAND_LABEL));
             int lineId = Integer.parseInt(body.get(Constants.VEHICLE_LINE_LABEL));
 
-            Vehicle vehicle = vehicleService.createVehicle(body.get(Constants.VEHICLE_ID_LABEL), brandId,
+            Vehicle vehicle = vehicleService.createVehicle(body.get(Constants.VEHICLE_ID_LABEL), vehicleId,
                     lineId, body.get(Constants.VEHICLE_YEAR_LABEL));
 
             if (vehicle == null)
@@ -46,6 +55,12 @@ public class VehicleController {
         }
     }
 
+    /**
+     * Update a vehicle in the system
+     *
+     * @param     body contains the information to update the vehicle
+     * @return    returns the result of the update action
+     */
     @PutMapping("/vehicle")
     public ResponseEntity<Object> update(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.VEHICLE_ID_LABEL) || !body.containsKey(Constants.VEHICLE_BRAND_LABEL) ||
@@ -53,10 +68,10 @@ public class VehicleController {
             return ResponseEntity.badRequest().body(new UpdateVehicleResult(false, "Bad Request"));
 
         try {
-            int brandId = Integer.parseInt(body.get(Constants.VEHICLE_BRAND_LABEL));
+            int vehicleId = Integer.parseInt(body.get(Constants.VEHICLE_BRAND_LABEL));
             int lineId = Integer.parseInt(body.get(Constants.VEHICLE_LINE_LABEL));
 
-            Vehicle updatedVehicle = vehicleService.updateVehicle(body.get(Constants.VEHICLE_ID_LABEL), brandId,
+            Vehicle updatedVehicle = vehicleService.updateVehicle(body.get(Constants.VEHICLE_ID_LABEL), vehicleId,
                     lineId, body.get(Constants.VEHICLE_YEAR_LABEL));
 
             if (updatedVehicle == null)
@@ -68,6 +83,12 @@ public class VehicleController {
         }
     }
 
+    /**
+     * Delete a vehicle in the system
+     *
+     * @param     universalCode the universalCode vehicle we want to delete
+     * @return    returns the result of the deletion action
+     */
     @DeleteMapping("/vehicle/{id}")
     public ResponseEntity<Object> delete(@PathVariable("id") String universalCode) {
         if (universalCode == null)
@@ -79,11 +100,22 @@ public class VehicleController {
             return ResponseEntity.badRequest().body(new DeleteVehicleResult(false, "Error deleting the vehicle"));
     }
 
+    /**
+     * Gets the system vehicles
+     *
+     * @return    returns the list of vehicles in the system
+     */
     @GetMapping("/vehicle")
     public ResponseEntity<Object> index() {
         return ResponseEntity.ok().body(vehicleService.getVehicles());
     }
 
+    /**
+     * Gets a vehicle
+     *
+     * @param     universalCode the universalCode of the vehicle we want to get
+     * @return    returns the founded vehicle
+     */
     @GetMapping("/vehicle/{id}")
     public ResponseEntity<Object> get(@PathVariable("id") String universalCode) {
         if (universalCode == null)
