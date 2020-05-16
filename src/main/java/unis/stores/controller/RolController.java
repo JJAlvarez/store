@@ -14,12 +14,22 @@ import unis.stores.services.rol.RolService;
 
 import java.util.Map;
 
+@CrossOrigin
 @Controller
 public class RolController {
 
+    /**
+     * The rol service to connect to the database
+     */
     @Autowired
     private RolService rolService;
 
+    /**
+     * Create a rol in the system
+     *
+     * @param     body contains the information to create the rol
+     * @return    returns the result of the creation action
+     */
     @PostMapping("/rol")
     public ResponseEntity<Object> create(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.ROL_NAME_LABEL))
@@ -36,13 +46,16 @@ public class RolController {
             return ResponseEntity.ok().body(createdRol);
     }
 
+    /**
+     * Update a rol in the system
+     *
+     * @param     body contains the information to update the rol
+     * @return    returns the result of the update action
+     */
     @PutMapping("/rol")
     public ResponseEntity<Object> update(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.ROL_NAME_LABEL) || !body.containsKey(Constants.ROL_ID_LABEL))
             return ResponseEntity.badRequest().body(new UpdateRolResult(false, "Bad Request"));
-
-        if (rolService.searchByName(body.get(Constants.ROL_NAME_LABEL)) != null)
-            return ResponseEntity.badRequest().body(new UpdateRolResult(false, "The rol already exists!"));
 
         try {
             int rolId = Integer.parseInt(body.get(Constants.ROL_ID_LABEL));
@@ -58,6 +71,12 @@ public class RolController {
         }
     }
 
+    /**
+     * Delete a rol in the system
+     *
+     * @param     id the id rol we want to delete
+     * @return    returns the result of the deletion action
+     */
     @DeleteMapping("/rol/{id}")
     public ResponseEntity<Object> delete(@PathVariable("id") String id) {
         if (id == null)
@@ -75,11 +94,22 @@ public class RolController {
         }
     }
 
+    /**
+     * Gets the system rols
+     *
+     * @return    returns the list of rols in the system
+     */
     @GetMapping("/rol")
     public ResponseEntity<Object> index() {
         return ResponseEntity.ok().body(rolService.getRoles());
     }
 
+    /**
+     * Gets a rol
+     *
+     * @param     id the id of the rol we want to get
+     * @return    returns the founded rol
+     */
     @GetMapping("/rol/{id}")
     public ResponseEntity<Object> get(@PathVariable("id") String id) {
         if (id == null)
