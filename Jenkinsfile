@@ -16,7 +16,7 @@ pipeline {
         {
             steps {
                    
-                        sh 'docker build -t springio/api'
+                        sh 'docker build -t springio/gs-spring-boot-docker'
                   }
           }
    }
