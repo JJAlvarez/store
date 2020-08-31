@@ -26,4 +26,5 @@ pipeline {
                 sh 'mvn dockerfile:push'
             }
         }
+    }
 }
