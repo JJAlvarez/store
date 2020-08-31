@@ -12,12 +12,11 @@ pipeline {
        sh 'mvn clean install'
        }
      }
-       stage ('docker image build')
+       stage ('Build Image Docker')
         {
             steps {
                    
-                        sh 'mvn dockerfile:build'
-                         
+                        sh 'docker build -t springio/api'
                   }
           }
    }
