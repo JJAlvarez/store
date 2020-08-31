@@ -11,11 +11,6 @@ pipeline {
                docker {
                  image 'maven:3.5.0'
         }
-        stage ('maven version') {
-            steps {
-                sh 'mvn -version'
-            }
-        }
         stage ('build app test') {
             steps {
                 sh 'mvn clean install -DskipTests=true '
