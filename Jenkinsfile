@@ -1,15 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage ('Checking java version') {
-            steps {
-                sh 'java -version'
-            }
-        }
-        stage('Maven Install') {
+        stage ('Maven Install') {
             agent {
                docker {
                  image 'maven:3.5.0'
+                }
         }
         stage ('build app test') {
             steps {
@@ -30,5 +26,4 @@ pipeline {
                 sh 'mvn dockerfile:push'
             }
         }
-    }
 }
