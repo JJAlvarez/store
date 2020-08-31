@@ -24,9 +24,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="add: agregando rama de develop para pruebas de docker file">
+    <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="add: haciendo cambios para poder hacer un pipeline del de la aplicacion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -285,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598849140781</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add: haciendo cambios para poder hacer un pipeline del de la aplicacion">
+      <created>1598850095216</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598850095216</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +314,8 @@
     <MESSAGE value="adding login service" />
     <MESSAGE value="adding create and update user service" />
     <MESSAGE value="add: agregando rama de develop para pruebas de docker file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: agregando rama de develop para pruebas de docker file" />
+    <MESSAGE value="add: haciendo cambios para poder hacer un pipeline del de la aplicacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: haciendo cambios para poder hacer un pipeline del de la aplicacion" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Assign_Data_Sources" timestamp="1581234060029">

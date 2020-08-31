@@ -6,6 +6,13 @@ pipeline {
                 sh 'java -version'
             }
         }
+        stages {
+            stage('Maven Install') {
+              agent {
+               docker {
+                 image 'maven:3.5.0'
+             }
+        }
         stage ('maven version') {
             steps {
                 sh 'mvn -version'
