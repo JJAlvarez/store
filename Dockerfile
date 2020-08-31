@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 9001
-ADD target/Stores.war Stores.war
+ADD target/stores.war stores.war
 ENTRYPOINT ["java","-jar","/stores.war"]
