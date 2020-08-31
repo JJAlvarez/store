@@ -9,14 +9,14 @@ pipeline {
      }       
   }       
   steps {
-       sh './mvnw package && java -jar Stores.jar'
+       sh 'mvn clean install'
        }
      }
        stage ('Build Image Docker')
         {
             steps {
                    
-                        sh 'docker build -t springio/Stores'
+                        sh 'docker build -t Stores'
                   }
           }
    }
