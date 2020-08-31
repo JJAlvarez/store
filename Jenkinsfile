@@ -9,7 +9,7 @@ pipeline {
      }       
   }       
   steps {
-       sh 'mvn clean install'
+       sh './mvnw package && java -jar Stores.jar'
        }
      }
        stage ('Build Image Docker')
