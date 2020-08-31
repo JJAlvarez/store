@@ -5,94 +5,29 @@
     <option name="SCOPE_TYPE" value="8" />
     <option name="CUSTOM_SCOPE_NAME" value="Unnamed" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/ojdbc8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/CreditSaleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/CreateRequestResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/CreditSale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/FabricVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/ProductFabric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/CreditSaleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/ProductSaleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/creditsale/CreditSaleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/creditsale/ICreditSaleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/http/RestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BrandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LineTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SubscriptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/constants/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/BrandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/FabricController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/FabricController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/LineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/LineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/OrderStateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/OrderStateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RequestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RequestStateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RequestStateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/RolController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/SaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/SaleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/SubscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/SubscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/VehicleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Brand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Fabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Fabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/OrderState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/OrderState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/ProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/ProductRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/ProductSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/ProductSale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/RequestState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/RequestState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Rol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Subscription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/entities/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/BrandRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/FabricRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/FabricRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/LineRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/LineRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/OrderStateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/OrderStateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/ProductRequestRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/ProductRequestRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/RequestRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/RequestRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/RequestStateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/RequestStateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/RolRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/RolRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/SaleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/SaleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/VehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/repositories/VehicleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/brand/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/brand/BrandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/brand/IBrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/brand/IBrandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/IClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/client/IClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/fabric/FabricService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/fabric/FabricService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/fabric/IFabricService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/fabric/IFabricService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/line/ILineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/line/ILineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/line/LineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/line/LineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/orderstate/IOrderStateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/orderstate/IOrderStateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/orderstate/OrderStateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/orderstate/OrderStateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/IProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/product/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/request/IRequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/request/IRequestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/request/RequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/request/RequestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/requeststate/IRequestStateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/requeststate/IRequestStateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/requeststate/RequestStateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/requeststate/RequestStateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/rol/IRolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/rol/IRolService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/rol/RolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/rol/RolService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/sale/ISaleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/sale/ISaleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/sale/SaleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/sale/SaleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/ISubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/ISubscriptionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/SubscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/subscription/SubscriptionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/user/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/user/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/vehicle/IVehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/vehicle/IVehicleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/vehicle/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/vehicle/VehicleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,9 +71,6 @@
     </expand>
     <select />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Stores" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -151,13 +83,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="NamedScopeManager">
     <scope name="Unnamed" pattern="src:unis.stores.entities.*||src:unis.stores.controller.*||src:unis.stores.repositories.*||src:unis.stores.constants.*||src:unis.stores.services.line.*||src:unis.stores.services.sale.*||src:unis.stores.services.user.*||src:unis.stores.services.brand.*||src:unis.stores.services.client.*||src:unis.stores.services.fabric.*||src:unis.stores.services.product.*||src:unis.stores.services.request.*||src:unis.stores.services.vehicle.*||src:unis.stores.services.creditsale.*||src:unis.stores.services.orderstate.*||src:unis.stores.services.requeststate.*||src:unis.stores.services.subscription.*||src:unis.stores.services.rol.*" />
   </component>
@@ -167,7 +92,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -289,19 +213,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-    <option name="showServicesTree" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -369,6 +280,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
