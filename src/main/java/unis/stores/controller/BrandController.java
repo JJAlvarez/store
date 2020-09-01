@@ -31,7 +31,7 @@ public class BrandController {
      * @return    returns the result of the creation of the brand
      */
     @PostMapping("/brand")
-    public ResponseEntity<Object> create(@RequestBody Map<String, String> body) {
+    public create(@RequestBody Map<String, String> body) {
         if (!body.containsKey(Constants.BRAND_NAME_LABEL))
             return ResponseEntity.badRequest().body(new CreateBrandResult(false, "Bad Request", null));
 
