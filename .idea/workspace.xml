@@ -25,10 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/store.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +125,7 @@
       <recent name="C:\Users\jalvarez\IdeaProjects\Stores\src\main\javadoc" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UnitTesting">
+  <component name="RunManager" selected="Spring Boot.MainApplicationClass (1)">
     <configuration name="BrandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Stores" />
       <option name="PACKAGE_NAME" value="" />
@@ -158,6 +158,19 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UnitTesting" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplicationClass (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unis.stores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="unis.stores.MainApplicationClass" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -207,6 +220,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MainApplicationClass (1)" />
         <item itemvalue="JUnit.UnitTesting" />
         <item itemvalue="JUnit.SubscriptionTest" />
         <item itemvalue="JUnit.LineTest" />
@@ -254,6 +268,8 @@
       <workItem from="1589293418148" duration="13065000" />
       <workItem from="1589505425849" duration="10131000" />
       <workItem from="1589600234922" duration="11841000" />
+      <workItem from="1598918275948" duration="2213000" />
+      <workItem from="1598925783649" duration="1898000" />
     </task>
     <task id="LOCAL-00001" summary="adding client and subscription methods">
       <created>1581278189090</created>
@@ -294,10 +310,9 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="oldMeFiltersMigrated" value="true" />
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -307,6 +322,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -318,6 +334,42 @@
     <option name="LAST_COMMIT_MESSAGE" value="add: haciendo cambios para poder hacer un pipeline del de la aplicacion" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1984" y="-307" key="#MainApplicationClass" timestamp="1598926191941">
+      <screen x="1366" y="-425" width="1920" height="1040" />
+    </state>
+    <state x="1984" y="-307" key="#MainApplicationClass/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598926191941" />
+    <state width="1299" height="282" key="GridCell.Tab.0.bottom" timestamp="1598928041424">
+      <screen x="1366" y="-425" width="1920" height="1040" />
+    </state>
+    <state width="1299" height="282" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928041424" />
+    <state width="1299" height="282" key="GridCell.Tab.0.center" timestamp="1598928041424">
+      <screen x="1366" y="-425" width="1920" height="1040" />
+    </state>
+    <state width="1299" height="282" key="GridCell.Tab.0.center/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928041424" />
+    <state width="1299" height="282" key="GridCell.Tab.0.left" timestamp="1598928041424">
+      <screen x="1366" y="-425" width="1920" height="1040" />
+    </state>
+    <state width="1299" height="282" key="GridCell.Tab.0.left/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928041424" />
+    <state width="1299" height="282" key="GridCell.Tab.0.right" timestamp="1598928041424">
+      <screen x="1366" y="-425" width="1920" height="1040" />
+    </state>
+    <state width="1299" height="282" key="GridCell.Tab.0.right/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928041424" />
+    <state width="1299" height="282" key="GridCell.Tab.1.bottom" timestamp="1598928041424">
+      <screen x="1366" y="-425" width="1920" height="1040" />
+    </state>
+    <state width="1299" height="282" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928041424" />
+    <state width="1299" height="282" key="GridCell.Tab.1.center" timestamp="1598928041424">
+      <screen x="1366" y="-425" width="1920" height="1040" />
+    </state>
+    <state width="1299" height="282" key="GridCell.Tab.1.center/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928041424" />
+    <state width="1299" height="282" key="GridCell.Tab.1.left" timestamp="1598928041424">
+      <screen x="1366" y="-425" width="1920" height="1040" />
+    </state>
+    <state width="1299" height="282" key="GridCell.Tab.1.left/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928041424" />
+    <state width="1299" height="282" key="GridCell.Tab.1.right" timestamp="1598928041424">
+      <screen x="1366" y="-425" width="1920" height="1040" />
+    </state>
+    <state width="1299" height="282" key="GridCell.Tab.1.right/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928041424" />
     <state x="616" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598850595101">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
