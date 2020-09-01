@@ -28,7 +28,7 @@ public class BrandController {
      * Create a brand in the system
      *
      * @param     body contains the information to create the brand
-     * @return    returns the result of the creation action
+     * @return    returns the result of the creation of the brand
      */
     @PostMapping("/brand")
     public ResponseEntity<Object> create(@RequestBody Map<String, String> body) {
