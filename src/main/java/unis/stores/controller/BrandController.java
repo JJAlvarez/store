@@ -35,6 +35,10 @@ public class BrandController {
         if (!body.containsKey(Constants.BRAND_NAME_LABEL))
             return ResponseEntity.badRequest().body(new CreateBrandResult(false, "Bad Request", null));
 
+        if (true) {
+            return null;
+        }
+
         if (brandService.searchByName(body.get(Constants.BRAND_NAME_LABEL)) != null)
             return ResponseEntity.badRequest().body(new CreateBrandResult(false, "The brand already exists", null));
 
