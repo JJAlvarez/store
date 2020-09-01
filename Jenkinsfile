@@ -1,29 +1,24 @@
+#!groovy
+
 pipeline {
     agent any
+
+    tools {
+        maven "Maven3" // You need to add a maven with name "3.6.0" in the Global Tools Configuration page
+    }
+
     stages {
-        stage ('Maven Install') {
-            agent {
-               docker {
-                 image 'maven:3.5.0'
-                }
-        }
-        stage ('build app test') {
+        stage("Build") {
             steps {
-                sh 'mvn clean install -DskipTests=true '
+                sh "mvn -version"
+                sh "mvn clean install"
             }
         }
+    }
 
-        stage ('docker image build')
-                {
-                    steps {
-
-                        sh 'mvn dockerfile:build'
-
-                    }
-                }
-        stage ('docker image push to Docker Hub') {
-            steps {
-                sh 'mvn dockerfile:push'
-            }
+    post {
+        always {
+            cleanWs()
         }
+    }
 }

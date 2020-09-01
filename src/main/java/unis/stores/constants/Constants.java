@@ -2,6 +2,7 @@ package unis.stores.constants;
 
 public class Constants {
 
+    private Constants() {}
     //User constants
     /**
      * The id of the user
