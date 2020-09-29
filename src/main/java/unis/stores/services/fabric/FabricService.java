@@ -49,6 +49,10 @@ public class FabricService implements IFabricService {
      */
     @Override
     public Fabric createFabric(String name, String ip, String servicePassword) {
+        if (name == null || ip == null || servicePassword == null) {
+            return null;
+        }
+
         Fabric fabric = new Fabric();
         fabric.setName(name);
         fabric.setIp(ip);
