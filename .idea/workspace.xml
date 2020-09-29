@@ -25,11 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bbecd56-6ee1-476f-9fbd-eccc858c9bc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/FabricTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RolTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/controller/BrandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unis/stores/services/fabric/FabricService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unis/stores/services/fabric/FabricService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +270,7 @@
       <workItem from="1598918275948" duration="2213000" />
       <workItem from="1598925783649" duration="5915000" />
       <workItem from="1599001991309" duration="2798000" />
-      <workItem from="1601410937847" duration="585000" />
+      <workItem from="1601410937847" duration="4710000" />
     </task>
     <task id="LOCAL-00001" summary="adding client and subscription methods">
       <created>1581278189090</created>
@@ -347,26 +343,26 @@
       <screen x="1366" y="-425" width="1920" height="1040" />
     </state>
     <state x="1951" y="19" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1601410952420" />
-    <state width="916" height="282" key="GridCell.Tab.0.bottom" timestamp="1598961834414">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="436" key="GridCell.Tab.0.bottom" timestamp="1601411713386">
+      <screen x="1366" y="-425" width="1920" height="1040" />
     </state>
     <state width="916" height="282" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-425.1920.1040@0.0.1366.728" timestamp="1598961834414" />
-    <state width="1299" height="282" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928137935" />
-    <state width="916" height="282" key="GridCell.Tab.0.center" timestamp="1598961834414">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="436" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1601411713386" />
+    <state width="1877" height="436" key="GridCell.Tab.0.center" timestamp="1601411713386">
+      <screen x="1366" y="-425" width="1920" height="1040" />
     </state>
     <state width="916" height="282" key="GridCell.Tab.0.center/0.0.1366.728/1366.-425.1920.1040@0.0.1366.728" timestamp="1598961834414" />
-    <state width="1299" height="282" key="GridCell.Tab.0.center/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928137935" />
-    <state width="916" height="282" key="GridCell.Tab.0.left" timestamp="1598961834414">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="436" key="GridCell.Tab.0.center/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1601411713386" />
+    <state width="1877" height="436" key="GridCell.Tab.0.left" timestamp="1601411713386">
+      <screen x="1366" y="-425" width="1920" height="1040" />
     </state>
     <state width="916" height="282" key="GridCell.Tab.0.left/0.0.1366.728/1366.-425.1920.1040@0.0.1366.728" timestamp="1598961834414" />
-    <state width="1299" height="282" key="GridCell.Tab.0.left/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928137935" />
-    <state width="916" height="282" key="GridCell.Tab.0.right" timestamp="1598961834414">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="436" key="GridCell.Tab.0.left/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1601411713386" />
+    <state width="1877" height="436" key="GridCell.Tab.0.right" timestamp="1601411713386">
+      <screen x="1366" y="-425" width="1920" height="1040" />
     </state>
     <state width="916" height="282" key="GridCell.Tab.0.right/0.0.1366.728/1366.-425.1920.1040@0.0.1366.728" timestamp="1598961834414" />
-    <state width="1299" height="282" key="GridCell.Tab.0.right/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928137935" />
+    <state width="1877" height="436" key="GridCell.Tab.0.right/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1601411713386" />
     <state width="916" height="282" key="GridCell.Tab.1.bottom" timestamp="1598961834414">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -387,9 +383,10 @@
     </state>
     <state width="916" height="282" key="GridCell.Tab.1.right/0.0.1366.728/1366.-425.1920.1040@0.0.1366.728" timestamp="1598961834414" />
     <state width="1299" height="282" key="GridCell.Tab.1.right/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1598928137936" />
-    <state x="616" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598850595101">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="2136" y="18" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601412844781">
+      <screen x="1366" y="-425" width="1920" height="1040" />
     </state>
+    <state x="2136" y="18" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.-425.1920.1040@1366.-425.1920.1040" timestamp="1601412844781" />
     <state x="616" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1598850595101" />
     <state x="1989" y="-200" width="672" height="678" key="search.everywhere.popup" timestamp="1601411231964">
       <screen x="1366" y="-425" width="1920" height="1040" />
